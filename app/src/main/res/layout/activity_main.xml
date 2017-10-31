@@ -117,7 +117,7 @@
         android:layout_height="60dp"
         android:layout_margin="25dp"
         android:clickable="true"
-        android:src="@drawable/ic_add"
+        android:src="@drawable/ic_add_black_24dp"
         app:layout_anchor="@id/balanceRelativeLayout"
         app:layout_anchorGravity="bottom|right|end"/>
 

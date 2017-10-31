@@ -13,8 +13,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-import com.example.android.moneymanager.data.transactions.TransactionsContract.TransactionEntry;
-import com.example.android.moneymanager.data.transactions.TransactionsCursorAdapter;
+
+import com.example.android.moneymanager.data.data.DatabaseContract;
+import com.example.android.moneymanager.data.Adapters.TransactionsCursorAdapter;
 
 
 /*
@@ -48,7 +49,7 @@ public class FragmentHomeActivity extends Fragment implements LoaderManager.Load
         super.onCreate(savedInstanceState);
 
 
-//        transactionsDbHelper = new TransactionsDbHelper(getContext());
+//        transactionsDbHelper = new DatabaseDbHelper(getContext());
 
         rootView = inflater.inflate(R.layout.fragment_home_activity, container, false);
 
@@ -79,26 +80,26 @@ public class FragmentHomeActivity extends Fragment implements LoaderManager.Load
     public Loader<Cursor> onCreateLoader(int id, Bundle args) {
 
         String[] projection = {
-                TransactionEntry._ID,
-                TransactionEntry.COLUMN_AMOUNT,
-                TransactionEntry.COLUMN_CURRENCY,
-                TransactionEntry.COLUMN_TYPE,
-                TransactionEntry.COLUMN_DATE,
-                TransactionEntry.COLUMN_DESCRIPTION,
-                TransactionEntry.COLUMN_PARENT_AMOUNT};
+                DatabaseContract.DatabaseEntry._ID,
+                DatabaseContract.DatabaseEntry.COLUMN_AMOUNT,
+                DatabaseContract.DatabaseEntry.COLUMN_CURRENCY,
+                DatabaseContract.DatabaseEntry.COLUMN_TYPE,
+                DatabaseContract.DatabaseEntry.COLUMN_DATE,
+                DatabaseContract.DatabaseEntry.COLUMN_DESCRIPTION,
+                DatabaseContract.DatabaseEntry.COLUMN_PARENT_AMOUNT};
 
-        String selection = TransactionEntry.COLUMN_TYPE + "=?";
+        String selection = DatabaseContract.DatabaseEntry.COLUMN_TYPE + "=?";
 
 
 
         /*
         In case of the integer casting into String
-         String[] selectionArgs = new String[] { String.valueOf(TransactionEntry.TYPE_GOING)};
+         String[] selectionArgs = new String[] { String.valueOf(DatabaseEntry.TYPE_GOING)};
          */
 
-        String[] selectionArgs = new String[] {TransactionEntry.TYPE_GOING};
+        String[] selectionArgs = new String[] {DatabaseContract.DatabaseEntry.TYPE_GOING};
 
-        return new CursorLoader(getContext(), TransactionEntry.CONTENT_URI, projection, null, null, TransactionEntry._ID + " DESC");
+        return new CursorLoader(getContext(), DatabaseContract.DatabaseEntry.TRANSACTIONS_URI, projection, null, null, DatabaseContract.DatabaseEntry._ID + " DESC");
     }
 
     @Override

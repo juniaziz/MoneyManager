@@ -19,7 +19,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.example.android.moneymanager.data.transactions.TransactionsContract.TransactionEntry;
+
+import com.example.android.moneymanager.data.data.DatabaseContract;
+import com.example.android.moneymanager.data.data.DatabaseContract.DatabaseEntry;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -98,16 +100,16 @@ public class MainActivity extends AppCompatActivity {
 
                     ContentValues values = new ContentValues();
 
-                    values.put(TransactionEntry.COLUMN_AMOUNT, amount);
-                    values.put(TransactionEntry.COLUMN_CURRENCY, currency);
-                    values.put(TransactionEntry.COLUMN_TYPE, radioButton);
-                    values.put(TransactionEntry.COLUMN_DATE, selectedDate);
-                    values.put(TransactionEntry.COLUMN_DESCRIPTION, description);
-                    values.put(TransactionEntry.COLUMN_PARENT_AMOUNT, "Ammi K Paisay");
+                    values.put(DatabaseContract.DatabaseEntry.COLUMN_AMOUNT, amount);
+                    values.put(DatabaseContract.DatabaseEntry.COLUMN_CURRENCY, currency);
+                    values.put(DatabaseContract.DatabaseEntry.COLUMN_TYPE, radioButton);
+                    values.put(DatabaseContract.DatabaseEntry.COLUMN_DATE, selectedDate);
+                    values.put(DatabaseContract.DatabaseEntry.COLUMN_DESCRIPTION, description);
+                    values.put(DatabaseContract.DatabaseEntry.COLUMN_PARENT_AMOUNT, "Ammi K Paisay");
 
-                    Log.d("Type from values: ", String.valueOf(values.getAsString(TransactionEntry.COLUMN_TYPE)));
+                    Log.d("Type from values: ", String.valueOf(values.getAsString(DatabaseContract.DatabaseEntry.COLUMN_TYPE)));
 
-                    Uri newUri = getContentResolver().insert(TransactionEntry.CONTENT_URI, values);
+                    Uri newUri = getContentResolver().insert(DatabaseEntry.TRANSACTIONS_URI, values);
 
                     if (newUri == null) {
                         // If the new content URI is null, then there was an error with insertion.

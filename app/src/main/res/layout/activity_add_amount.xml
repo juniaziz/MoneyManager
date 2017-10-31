@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/coordinatorParentLayout"
     tools:context="com.example.android.moneymanager.AddAmountActivity">
 
 
@@ -29,7 +30,7 @@
             android:layout_centerHorizontal="true"
             android:fontFamily="sans-serif-medium"
             android:paddingTop="16dp"
-            android:text="You need to Spend your money!"
+            android:text="Why So Poor?"
             android:textAppearance="?android:textAppearanceMedium"/>
 
         <TextView
@@ -40,7 +41,7 @@
             android:layout_centerHorizontal="true"
             android:fontFamily="sans-serif"
             android:paddingTop="8dp"
-            android:text="Get started by adding a transaction"
+            android:text="Get started by having some money"
             android:textAppearance="?android:textAppearanceSmall"
             android:textColor="#A2AAB0"/>
     </RelativeLayout>
@@ -61,7 +62,7 @@
         android:layout_height="60dp"
         android:layout_margin="25dp"
         android:clickable="true"
-        android:src="@drawable/ic_add"
+        android:src="@drawable/ic_add_black_24dp"
         app:layout_anchor="@id/add_amount_listview"
         app:layout_anchorGravity="bottom|right|end"/>
 

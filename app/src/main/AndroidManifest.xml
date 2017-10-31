@@ -24,7 +24,7 @@
         </activity>
 
         <provider
-            android:name=".data.transactions.TransactionsProvider"
+            android:name=".data.data.DatabaseContentProvider"
             android:authorities="com.example.android.moneymanager"
             android:exported="false" />
 
