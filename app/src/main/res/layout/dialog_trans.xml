@@ -113,6 +113,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Coming" />
+
         </RadioGroup>
 
 
@@ -192,6 +193,7 @@
         android:layout_height="50dp"
         android:layout_margin="10dp"
         android:id="@+id/addBtn_dialog"
+        android:background="@color/accent"
         android:text="Add"/>
 
 

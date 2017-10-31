@@ -46,29 +46,39 @@
 
             </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/remainingBalance"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="30dp"
-                android:layout_centerVertical="true"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                android:textColor="@color/primary_text"
-                android:text="138,000"/>
 
-            <TextView
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/currency"
-                android:text="PKR:"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="20dp"
-                android:textColor="@color/primary_text"
-                android:layout_toStartOf="@id/remainingBalance"/>
+                android:layout_marginEnd="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/remainingBalance"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary_text"
+                    android:text="138,0000000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/currency"
+                    android:text="PKR:"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/primary_text"
+                    android:layout_toStartOf="@id/remainingBalance"/>
+
+            </RelativeLayout>
+
 
         </RelativeLayout>
 
@@ -79,25 +89,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingTop="10dp"
+            android:paddingTop="20dp"
             android:layout_below="@id/balanceRelativeLayout">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="No database Item"
-                android:layout_margin="5dp"
-                android:id="@+id/database_output" />
 
 
 
 
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="match_parent"
                 android:id="@+id/fragmentContainer">
-
-
 
 
             </FrameLayout>

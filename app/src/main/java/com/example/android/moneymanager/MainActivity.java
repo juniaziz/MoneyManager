@@ -2,8 +2,8 @@ package com.example.android.moneymanager;
 
 import android.app.Dialog;
 import android.content.ContentValues;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
+import java.text.*;
+import android.net.Uri;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -19,14 +19,11 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.example.android.moneymanager.TransactionsContract.TransactionEntry;
+import com.example.android.moneymanager.data.transactions.TransactionsContract.TransactionEntry;
 
 
 public class MainActivity extends AppCompatActivity {
 
-
-    private TransactionsDbHelper transactionsDbHelper;
 
 
     @Override
@@ -41,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
         showFragment(fragmentHomeActivity);
 
-        transactionsDbHelper = new TransactionsDbHelper(this);
     }
+
 
 
 
@@ -58,6 +55,18 @@ public class MainActivity extends AppCompatActivity {
             dialog.show();
 
             final TextView selectedDateTextView = dialog.findViewById(R.id.dateTextView);
+            final EditText amountEditText = dialog.findViewById(R.id.amount_textfield);
+            final EditText currencyEditText = dialog.findViewById(R.id.currency_textfield);
+            final EditText descriptionEditText = dialog.findViewById(R.id.description_textfield);
+
+            currencyEditText.setText("AED");
+            descriptionEditText.setText("Ting Tong");
+
+
+            long date = System.currentTimeMillis();
+            SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+            String dateString = sdf.format(date);
+            selectedDateTextView.setText(dateString);
 
             selectedDateTextView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -77,12 +86,9 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
 
-                    EditText amountEditText = dialog.findViewById(R.id.amount_textfield);
-                    EditText currencyEditText = dialog.findViewById(R.id.currency_textfield);
-                    EditText descriptionEditText = dialog.findViewById(R.id.description_textfield);
-                    RadioGroup radioGroup = dialog.findViewById(R.id.radioGroup);
-                    int selectId = radioGroup.getCheckedRadioButtonId();
-                    RadioButton radioButtonID = dialog.findViewById(selectId);
+                    final RadioGroup radioGroup = dialog.findViewById(R.id.radioGroup);
+                    final int selectId = radioGroup.getCheckedRadioButtonId();
+                    final RadioButton radioButtonID = dialog.findViewById(selectId);
 
                     String amount = amountEditText.getText().toString().trim();
                     String currency = currencyEditText.getText().toString().trim();
@@ -99,17 +105,16 @@ public class MainActivity extends AppCompatActivity {
                     values.put(TransactionEntry.COLUMN_DESCRIPTION, description);
                     values.put(TransactionEntry.COLUMN_PARENT_AMOUNT, "Ammi K Paisay");
 
-                    SQLiteDatabase transactionsDb = transactionsDbHelper.getWritableDatabase();
+                    Log.d("Type from values: ", String.valueOf(values.getAsString(TransactionEntry.COLUMN_TYPE)));
 
-                    long newTransactionId = transactionsDb.insert(TransactionEntry.TABLE_NAME, null, values);
+                    Uri newUri = getContentResolver().insert(TransactionEntry.CONTENT_URI, values);
 
-                    System.out.print("newTransactionId: " + newTransactionId);
+                    if (newUri == null) {
+                        // If the new content URI is null, then there was an error with insertion.
+                        Toast.makeText(MainActivity.this, "Insert transaction failed", Toast.LENGTH_SHORT).show();
+                    }
 
                     dialog.dismiss();
-
-                    Toast.makeText(MainActivity.this, "Saved Successfully Transaction ID: " + newTransactionId, Toast.LENGTH_LONG).show();
-
-                    displayData();
 
                 }
             });
@@ -117,93 +122,7 @@ public class MainActivity extends AppCompatActivity {
     };
 
 
-    private void displayData(){
 
-
-        SQLiteDatabase transactionDb = transactionsDbHelper.getReadableDatabase();
-
-        String[] projection = {
-                TransactionEntry._ID,
-                TransactionEntry.COLUMN_AMOUNT,
-                TransactionEntry.COLUMN_CURRENCY,
-                TransactionEntry.COLUMN_TYPE,
-                TransactionEntry.COLUMN_DATE,
-                TransactionEntry.COLUMN_DESCRIPTION,
-                TransactionEntry.COLUMN_PARENT_AMOUNT};
-
-        String selection = TransactionEntry.COLUMN_TYPE + "=?";
-
-        //Hello changes made to commit
-
-        /*
-        In case of the integer casting into String
-         String[] selectionArgs = new String[] { String.valueOf(TransactionEntry.TYPE_GOING)};
-         */
-
-        String[] selectionArgs = new String[] {TransactionEntry.TYPE_GOING};
-
-        Cursor cursor = transactionDb.query(TransactionEntry.TABLE_NAME, projection, null,null,null,null,null);
-
-
-        try {
-
-            TextView display_textview = findViewById(R.id.database_output);
-
-            display_textview.setText("Number of rows returned is: " + cursor.getCount() + "\n\n");
-
-
-            int idColumnIndex = cursor.getColumnIndex(TransactionEntry._ID);
-            int amountColumnIndex = cursor.getColumnIndex(TransactionEntry.COLUMN_AMOUNT);
-            int currencyColumnIndex = cursor.getColumnIndex(TransactionEntry.COLUMN_CURRENCY);
-            int typeColumnIndex = cursor.getColumnIndex(TransactionEntry.COLUMN_TYPE);
-            int dateColumnIndex = cursor.getColumnIndex(TransactionEntry.COLUMN_DATE);
-            int descriptionColumnIndex = cursor.getColumnIndex(TransactionEntry.COLUMN_DESCRIPTION);
-            int parentAmountColumnIndex = cursor.getColumnIndex(TransactionEntry.COLUMN_PARENT_AMOUNT);
-
-            Log.d("column index: ", " " + idColumnIndex
-                    + amountColumnIndex
-                    + currencyColumnIndex
-                    + typeColumnIndex
-                    + dateColumnIndex
-                    + descriptionColumnIndex
-                    + parentAmountColumnIndex + " ");
-
-            while (cursor.moveToNext()) {
-
-                int currentID = cursor.getInt(idColumnIndex);
-                String currentAmount = cursor.getString(amountColumnIndex);
-                String currentCurrency = cursor.getString(currencyColumnIndex);
-                String currentType = cursor.getString(typeColumnIndex);
-                String currentDate = cursor.getString(dateColumnIndex);
-                String currentDescription = cursor.getString(descriptionColumnIndex);
-                String currentParentAmount = cursor.getString(parentAmountColumnIndex);
-
-                Log.d("Row Index: ", " "
-                        + currentID + " "
-                        + currentAmount + " "
-                        + currentCurrency + " "
-                        + currentType + " "
-                        + currentDate + " "
-                        + currentDescription + " "
-                        + currentParentAmount + " ");
-
-                display_textview.append(("\n"
-                        + currentID + "-"
-                        + currentAmount + "-"
-                        + currentCurrency + "-"
-                        + currentType + "-"
-                        + currentDate + "-"
-                        + currentDescription + "-"
-                        + currentParentAmount));
-            }
-
-        } finally {
-            cursor.close();
-        }
-
-
-
-    }
 
 
 
