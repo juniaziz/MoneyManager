@@ -19,8 +19,9 @@ public class DatabaseContract {
      */
 
     public final static String CONTENT_AUTHORITY = "com.example.android.moneymanager";
+    //public final static String TEST_URI = "testPATH";
     public final static String PATH_TRANSACTIONS = "transations";
-    public final static String PATH_AMOUNTS = "amounts";
+    public final static String PATH_AMOUNTS = "Amounts";
 
     public final static Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
 
@@ -36,6 +37,7 @@ public class DatabaseContract {
 
         public final static Uri TRANSACTIONS_URI = Uri.withAppendedPath(BASE_CONTENT_URI, PATH_TRANSACTIONS);
         public final static Uri AMOUNTS_URI = Uri.withAppendedPath(BASE_CONTENT_URI, PATH_AMOUNTS);
+        public final static Uri AMOUNTS_ID_URI = Uri.withAppendedPath(AMOUNTS_URI, "/#");
 
         public final static String TABLE_NAME_TRANSACTIONS = "Transactions";
         public final static String TABLE_NAME_AMOUNTS = "Amounts";

@@ -54,9 +54,14 @@ public class DatabaseContentProvider extends ContentProvider {
 
     @Override
     public boolean onCreate() {
+
         mDatabaseDbHelper = new DatabaseDbHelper(getContext());
+
+
+
         return true;
     }
+
 
 
 
@@ -112,8 +117,23 @@ public class DatabaseContentProvider extends ContentProvider {
 
 
     @Override
-    public int update(@NonNull Uri uri, @Nullable ContentValues contentValues, @Nullable String s, @Nullable String[] strings) {
-        return 0;
+    public int update(@NonNull Uri uri, @Nullable ContentValues contentValues, @Nullable String selection, @Nullable String[] selectionArgs) {
+
+        SQLiteDatabase database = mDatabaseDbHelper.getWritableDatabase();
+
+        int match = sURiMatcher.match(uri);
+
+        switch (match){
+            case AMOUNT_ID:
+                selection = DatabaseContract.DatabaseEntry._ID + "=?";
+                selectionArgs = new String[] { String.valueOf(ContentUris.parseId(uri))};
+                getContext().getContentResolver().notifyChange(uri, null);
+                return database.update(DatabaseContract.DatabaseEntry.TABLE_NAME_AMOUNTS, contentValues, selection, selectionArgs);
+
+            default:
+                System.out.print("Update Failed. Invalid Uri");
+                return 0;
+        }
     }
 
     @Override
@@ -125,13 +145,23 @@ public class DatabaseContentProvider extends ContentProvider {
     @Override
     public Cursor query(@NonNull Uri uri, @Nullable String[] projection, @Nullable String selection, @Nullable String[] selectionArgs, @Nullable String sortOrder) {
 
-        SQLiteDatabase database = mDatabaseDbHelper.getReadableDatabase();
+        SQLiteDatabase database = mDatabaseDbHelper.getWritableDatabase();
 
         Cursor cursor;
 
         int match = sURiMatcher.match(uri);
 
         switch (match) {
+            //Transactions
+            case TRANSACTIONS:
+                cursor = database.query(DatabaseContract.DatabaseEntry.TABLE_NAME_TRANSACTIONS, projection, selection, selectionArgs, null, null, sortOrder);
+                break;
+            case TRANSACTIONS_ID:
+                selection = DatabaseContract.DatabaseEntry._ID + "=?";
+                selectionArgs = new String[] { String.valueOf(ContentUris.parseId(uri))};
+                cursor = database.query(DatabaseContract.DatabaseEntry.TABLE_NAME_TRANSACTIONS, projection, selection, selectionArgs, null, null, sortOrder);
+                break;
+
             //Amounts
             case AMOUNTS:
                 cursor = database.query(DatabaseContract.DatabaseEntry.TABLE_NAME_AMOUNTS, projection, selection, selectionArgs, null, null, sortOrder);
@@ -142,15 +172,6 @@ public class DatabaseContentProvider extends ContentProvider {
                 cursor = database.query(DatabaseContract.DatabaseEntry.TABLE_NAME_AMOUNTS, projection, selection, selectionArgs, null, null, sortOrder);
                 break;
 
-            //Transactions
-            case TRANSACTIONS:
-                cursor = database.query(DatabaseContract.DatabaseEntry.TABLE_NAME_TRANSACTIONS, projection, selection, selectionArgs, null, null, sortOrder);
-                break;
-            case TRANSACTIONS_ID:
-                selection = DatabaseContract.DatabaseEntry._ID + "=?";
-                selectionArgs = new String[] { String.valueOf(ContentUris.parseId(uri))};
-                cursor = database.query(DatabaseContract.DatabaseEntry.TABLE_NAME_TRANSACTIONS, projection, selection, selectionArgs, null, null, sortOrder);
-                break;
 
             default:
                 throw new IllegalArgumentException("Cannot Query. Invalid URI: " + uri);

@@ -1,7 +1,9 @@
 package com.example.android.moneymanager;
 
 import android.app.Dialog;
+import android.content.ContentUris;
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.support.design.widget.FloatingActionButton;
@@ -13,6 +15,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -32,42 +35,50 @@ public class AddAmountActivity extends AppCompatActivity implements LoaderManage
 
     private static final int AMOUNTS_LOADER = 2;
 
-    AmountsCursorAdapter mAmountsCursorAdapter;
+    ListView amountListView;
+    private AmountsCursorAdapter mAmountsCursorAdapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_amount);
 
-        mAmountsCursorAdapter = new AmountsCursorAdapter(this, null);
-        getSupportLoaderManager().initLoader(AMOUNTS_LOADER, null, this);
-
-        ListView amountListView = findViewById(R.id.add_amount_listview);
+        amountListView = findViewById(R.id.add_amount_listview);
         View emptyView = findViewById(R.id.empty_view_2);
         amountListView.setEmptyView(emptyView);
-        amountListView.setAdapter(mAmountsCursorAdapter);
 
 
 
         FloatingActionButton floatingActionButton = findViewById(R.id.fab_add_amount);
         floatingActionButton.setOnClickListener(onfabClicked);
 
-
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        mAmountsCursorAdapter = new AmountsCursorAdapter(this, null);
+        getSupportLoaderManager().initLoader(AMOUNTS_LOADER, null, this);
+        amountListView.setAdapter(mAmountsCursorAdapter);
+        amountListView.setOnItemClickListener(onItemSelected);
+
+    }
 
     @Override
     public Loader<Cursor> onCreateLoader(int id, Bundle args) {
 
         String[] projection = {
-                DatabaseContract.DatabaseEntry._ID,
-                DatabaseContract.DatabaseEntry.COLUMN_AMOUNT,
-                DatabaseContract.DatabaseEntry.COLUMN_CURRENCY,
-                DatabaseContract.DatabaseEntry.COLUMN_TYPE,
-                DatabaseContract.DatabaseEntry.COLUMN_DATE,
-                DatabaseContract.DatabaseEntry.COLUMN_DESCRIPTION,};
+                DatabaseEntry._ID,
+                DatabaseEntry.COLUMN_AMOUNT,
+                DatabaseEntry.COLUMN_CURRENCY,
+                DatabaseEntry.COLUMN_TYPE,
+                DatabaseEntry.COLUMN_DATE,
+                DatabaseEntry.COLUMN_DESCRIPTION,
+                DatabaseEntry.COLUMN_CURRENT_BALANCE};
 
-        String selection = DatabaseContract.DatabaseEntry.COLUMN_TYPE + "=?";
+        String selection = DatabaseEntry.COLUMN_TYPE + "=?";
 
 
 
@@ -76,9 +87,9 @@ public class AddAmountActivity extends AppCompatActivity implements LoaderManage
          String[] selectionArgs = new String[] { String.valueOf(DatabaseEntry.TYPE_GOING)};
          */
 
-        String[] selectionArgs = new String[] {DatabaseContract.DatabaseEntry.TYPE_GOING};
+        String[] selectionArgs = new String[] {DatabaseEntry.TYPE_GOING};
 
-        return new CursorLoader(this, DatabaseEntry.AMOUNTS_URI, projection, null, null, DatabaseContract.DatabaseEntry._ID + " DESC");
+        return new CursorLoader(this, DatabaseEntry.AMOUNTS_URI, projection, null, null, DatabaseEntry._ID + " DESC");
 
     }
 
@@ -92,13 +103,33 @@ public class AddAmountActivity extends AppCompatActivity implements LoaderManage
         mAmountsCursorAdapter.swapCursor(null);
     }
 
+    AdapterView.OnItemClickListener onItemSelected = new AdapterView.OnItemClickListener() {
+        @Override
+        public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+            Intent intent = new Intent(AddAmountActivity.this, MainActivity.class);
+
+                Uri currentAmountUri = ContentUris.withAppendedId(DatabaseEntry.AMOUNTS_URI, id);
+                intent.setData(currentAmountUri);
+                intent.putExtra("parentAmount", mAmountsCursorAdapter.getCursor().getString(mAmountsCursorAdapter.getCursor().getColumnIndexOrThrow(DatabaseEntry.COLUMN_DESCRIPTION)));
+                intent.putExtra("parentCurrency", mAmountsCursorAdapter.getCursor().getString(mAmountsCursorAdapter.getCursor().getColumnIndexOrThrow(DatabaseEntry.COLUMN_CURRENCY)));
+                intent.putExtra("parentDate", mAmountsCursorAdapter.getCursor().getString(mAmountsCursorAdapter.getCursor().getColumnIndexOrThrow(DatabaseEntry.COLUMN_DATE)));
+                intent.putExtra("parentCurrentBalance", mAmountsCursorAdapter.getCursor().getString(mAmountsCursorAdapter.getCursor().getColumnIndexOrThrow(DatabaseEntry.COLUMN_CURRENT_BALANCE)));
+                intent.putExtra("parent_ID", mAmountsCursorAdapter.getCursor().getString(mAmountsCursorAdapter.getCursor().getColumnIndexOrThrow(DatabaseEntry._ID)));
+            startActivity(intent);
+
+           Toast.makeText(AddAmountActivity.this, mAmountsCursorAdapter.getCursor()
+                   .getString(mAmountsCursorAdapter.getCursor().getColumnIndexOrThrow(DatabaseEntry.COLUMN_DESCRIPTION)),
+                   Toast.LENGTH_LONG).show();
+        }
+    };
+
 
     View.OnClickListener onfabClicked = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             final Dialog dialog = new Dialog(AddAmountActivity.this);
             dialog.setContentView(R.layout.dialog_trans);
-            dialog.setTitle("Add an Expense");
+            dialog.setTitle("Add an Amount");
             dialog.setCancelable(true);
 
             dialog.show();
@@ -118,6 +149,7 @@ public class AddAmountActivity extends AppCompatActivity implements LoaderManage
             SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
             String dateString = sdf.format(date);
             selectedDateTextView.setText(dateString);
+
 
             selectedDateTextView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -149,16 +181,16 @@ public class AddAmountActivity extends AppCompatActivity implements LoaderManage
 
                     ContentValues values = new ContentValues();
 
-                    values.put(DatabaseContract.DatabaseEntry.COLUMN_AMOUNT, amount);
-                    values.put(DatabaseContract.DatabaseEntry.COLUMN_CURRENCY, currency);
-                    values.put(DatabaseContract.DatabaseEntry.COLUMN_TYPE, radioButton);
-                    values.put(DatabaseContract.DatabaseEntry.COLUMN_DATE, selectedDate);
-                    values.put(DatabaseContract.DatabaseEntry.COLUMN_DESCRIPTION, description);
+                    values.put(DatabaseEntry.COLUMN_AMOUNT, amount);
+                    values.put(DatabaseEntry.COLUMN_CURRENCY, currency);
+                    values.put(DatabaseEntry.COLUMN_TYPE, radioButton);
+                    values.put(DatabaseEntry.COLUMN_DATE, selectedDate);
+                    values.put(DatabaseEntry.COLUMN_DESCRIPTION, description);
+                    values.put(DatabaseEntry.COLUMN_CURRENT_BALANCE, amount);
 
                     Log.d("Type from values: ", String.valueOf(values.getAsString(DatabaseEntry.COLUMN_TYPE)));
 
                     Uri newUri = getContentResolver().insert(DatabaseEntry.AMOUNTS_URI, values);
-                    Uri newUri2 = getContentResolver().insert(DatabaseEntry.TRANSACTIONS_URI, values);
 
                     if (newUri == null) {
                         // If the new content URI is null, then there was an error with insertion.

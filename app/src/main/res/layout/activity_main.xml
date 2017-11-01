@@ -32,7 +32,7 @@
                 android:layout_centerVertical="true">
 
                 <TextView
-                    android:id="@+id/amountDescription"
+                    android:id="@+id/parentAmount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="17sp"
@@ -41,6 +41,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/parentDate"
                     android:text="October - November, 2017"
                     android:layout_marginTop="70dp"/>
 
@@ -57,7 +58,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/remainingBalance"
+                    android:id="@+id/parentCurrentBalance"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:textSize="30sp"
@@ -68,14 +69,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/currency"
+                    android:id="@+id/parentCurrency"
                     android:text="PKR:"
                     android:textSize="30sp"
                     android:textStyle="bold"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="20dp"
                     android:textColor="@color/primary_text"
-                    android:layout_toStartOf="@id/remainingBalance"/>
+                    android:layout_toStartOf="@id/parentCurrentBalance"/>
 
             </RelativeLayout>
 
