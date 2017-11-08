@@ -204,7 +204,7 @@
         android:layout_margin="10dp"
         android:id="@+id/btn_save_changes"
         android:background="@color/accent"
-        android:text="Add"/>
+        android:text="Save Changes"/>
 
 
 </LinearLayout>

@@ -9,6 +9,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.util.Log;
 
 
 /*
@@ -149,6 +150,11 @@ public class DatabaseContentProvider extends ContentProvider {
                 selectionArgs = new String[] { String.valueOf(ContentUris.parseId(uri))};
                 getContext().getContentResolver().notifyChange(uri, null);
                 return database.delete(DatabaseContract.DatabaseEntry.TABLE_NAME_AMOUNTS, selection, selectionArgs);
+            case TRANSACTIONS_ID:
+                Log.d("Delete Transaction", " " + uri);
+                selection = DatabaseContract.DatabaseEntry.COLUMN_PARENT_AMOUNT + "=?";
+                selectionArgs = new String[] { String.valueOf(ContentUris.parseId(uri))};
+                return database.delete(DatabaseContract.DatabaseEntry.TABLE_NAME_TRANSACTIONS, selection, selectionArgs);
             default:
                 System.out.print("Delete Failed");
                 return 0;

@@ -9,13 +9,8 @@ import android.database.CursorIndexOutOfBoundsException;
 import android.database.DatabaseUtils;
 import android.graphics.Color;
 import android.net.Uri;
-import android.support.annotation.IdRes;
-import android.support.v4.app.DialogFragment;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -25,11 +20,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.daimajia.swipe.adapters.CursorSwipeAdapter;
-
-import w.moneymanager.AddAmountActivity;
-import w.moneymanager.DatePickerFragment;
 import w.moneymanager.R;
 import w.moneymanager.data.data.DatabaseContract;
 
@@ -184,51 +175,30 @@ public class AddAmountSwipeAdapter extends CursorSwipeAdapter  {
 
                     descriptionEditText.setText(description);
                     selectedDateTextView.setText(date);
+
                     selectedDateTextView.setEnabled(false);
+                    selectedDateTextView.setAlpha(.5f);
+
                     currencyEditText.setText(currency);
                     amountEditText.setText(amount);
 
                     if (!(amount.equalsIgnoreCase(currentBalance))){
-                       amountEditText.setFocusable(false);
+                        amountEditText.setFocusable(false);
 
-                        amountEditText.setOnClickListener(new View.OnClickListener() {
+                        amountEditText.setAlpha(.5f);
+
+                        View.OnClickListener disableToast = new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
-                                Toast.makeText(gContext, "Cannot change amounts with transactions", Toast.LENGTH_LONG).show();
+                                Toast.makeText(gContext, "Cannot change in amounts with transactions", Toast.LENGTH_LONG).show();
                             }
-                        });
+                        };
+
+                        selectedDateTextView.setOnClickListener(disableToast);
+                        amountEditText.setOnClickListener(disableToast);
 
                     }
 
-                    TextWatcher textWatcher = new TextWatcher() {
-                        @Override
-                        public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                            saveChanges.setEnabled(false);
-                        }
-
-                        @Override
-                        public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                            saveChanges.setEnabled(false);
-                        }
-
-                        @Override
-                        public void afterTextChanged(Editable editable) {
-                            saveChanges.setEnabled(true);
-                        }
-                    };
-
-                    RadioGroup.OnCheckedChangeListener checkedChangeListener = new RadioGroup.OnCheckedChangeListener() {
-                        @Override
-                        public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
-                            saveChanges.setEnabled(true);
-                        }
-                    };
-
-                    descriptionEditText.addTextChangedListener(textWatcher);
-                    selectedDateTextView.addTextChangedListener(textWatcher);
-                    currencyEditText.addTextChangedListener(textWatcher);
-                    amountEditText.addTextChangedListener(textWatcher);
-                    radioGroup.setOnCheckedChangeListener(checkedChangeListener);
 
                     saveChanges.setOnClickListener(new View.OnClickListener() {
                         @Override
@@ -258,10 +228,10 @@ public class AddAmountSwipeAdapter extends CursorSwipeAdapter  {
                                 int rowsAffected = gContext.getContentResolver().update(currentAmountUri, values, null, null);
 
                                 if (rowsAffected == 0) {
-                                    Toast.makeText(gContext, "Update Failed", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(gContext, "Save Failed", Toast.LENGTH_SHORT).show();
                                 }
                                 else {
-                                    Toast.makeText(gContext, "Update Successful", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(gContext, "Saved Successfully", Toast.LENGTH_SHORT).show();
                                 }
                             } finally {
                                 System.out.print("Unexpected error");
@@ -298,7 +268,7 @@ public class AddAmountSwipeAdapter extends CursorSwipeAdapter  {
 
             id = (Integer) v.getTag();
 
-
+            //TODO Delete all children transactions as well
 
 
             Log.d("mPosition", " " + id);
@@ -317,10 +287,22 @@ public class AddAmountSwipeAdapter extends CursorSwipeAdapter  {
                 @Override
                 public void onClick(View view) {
 
+                    Uri transDeleteURi = ContentUris.withAppendedId(DatabaseContract.DatabaseEntry.TRANSACTIONS_URI, id);
+                    Log.d("Delete:", " " + transDeleteURi);
+
+                    int deletedTransactions = gContext.getContentResolver().delete(transDeleteURi, null, null);
+
+                    if (deletedTransactions == 0) {
+                        Toast.makeText(gContext, "No Transactions Deleted", Toast.LENGTH_LONG).show();
+                    }else {
+                        Toast.makeText(gContext, deletedTransactions + " " + "Transactions Deleted", Toast.LENGTH_LONG).show();
+                    }
+
                     Uri currentAmountUri = ContentUris.withAppendedId(DatabaseContract.DatabaseEntry.AMOUNTS_URI, id);
 
                     Log.d("currentAmountURi:", " " + currentAmountUri);
                     int affectedRows = gContext.getContentResolver().delete(currentAmountUri, null, null);
+
 
                     if (affectedRows == 0) {
                         // If the new content URI is null, then there was an error with insertion.
