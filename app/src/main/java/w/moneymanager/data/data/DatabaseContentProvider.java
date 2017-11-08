@@ -150,10 +150,14 @@ public class DatabaseContentProvider extends ContentProvider {
                 selectionArgs = new String[] { String.valueOf(ContentUris.parseId(uri))};
                 getContext().getContentResolver().notifyChange(uri, null);
                 return database.delete(DatabaseContract.DatabaseEntry.TABLE_NAME_AMOUNTS, selection, selectionArgs);
+            case TRANSACTIONS:
+                getContext().getContentResolver().notifyChange(uri, null);
+                return database.delete(DatabaseContract.DatabaseEntry.TABLE_NAME_TRANSACTIONS, selection, selectionArgs);
             case TRANSACTIONS_ID:
                 Log.d("Delete Transaction", " " + uri);
-                selection = DatabaseContract.DatabaseEntry.COLUMN_PARENT_AMOUNT + "=?";
+                selection = DatabaseContract.DatabaseEntry._ID + "=?";
                 selectionArgs = new String[] { String.valueOf(ContentUris.parseId(uri))};
+                getContext().getContentResolver().notifyChange(uri, null);
                 return database.delete(DatabaseContract.DatabaseEntry.TABLE_NAME_TRANSACTIONS, selection, selectionArgs);
             default:
                 System.out.print("Delete Failed");

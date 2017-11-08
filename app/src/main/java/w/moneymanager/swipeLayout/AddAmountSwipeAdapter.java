@@ -54,7 +54,7 @@ public class AddAmountSwipeAdapter extends CursorSwipeAdapter  {
 
     @Override
     public View newView(Context context, Cursor cursor, ViewGroup parent) {
-        return LayoutInflater.from(context).inflate(R.layout.swipe_transaction, parent, false);
+        return LayoutInflater.from(context).inflate(R.layout.swipe_amount, parent, false);
     }
 
     @Override
@@ -239,23 +239,15 @@ public class AddAmountSwipeAdapter extends CursorSwipeAdapter  {
                             }
 
                             dialog.dismiss();
-
-
                         }
                     });
-
-
                 }
             }
             catch (CursorIndexOutOfBoundsException e){
                 Log.d("mPosition Cursor error:", " " + gCursor.getCount() + " " + DatabaseUtils.dumpCursorToString(gCursor));
             }
-
-
-
         }
     };
-
 
     private View.OnClickListener onDeleteClicked = new View.OnClickListener() {
         @Override
@@ -267,6 +259,7 @@ public class AddAmountSwipeAdapter extends CursorSwipeAdapter  {
             dialog.show();
 
             id = (Integer) v.getTag();
+            final String PARENT_AMOUNT_ID = Integer.toString(id);
 
             //TODO Delete all children transactions as well
 
@@ -287,10 +280,10 @@ public class AddAmountSwipeAdapter extends CursorSwipeAdapter  {
                 @Override
                 public void onClick(View view) {
 
-                    Uri transDeleteURi = ContentUris.withAppendedId(DatabaseContract.DatabaseEntry.TRANSACTIONS_URI, id);
-                    Log.d("Delete:", " " + transDeleteURi);
+                    String selection = DatabaseContract.DatabaseEntry.COLUMN_PARENT_AMOUNT + "=?";
+                    String[] selectionArgs = new String[] {PARENT_AMOUNT_ID};
 
-                    int deletedTransactions = gContext.getContentResolver().delete(transDeleteURi, null, null);
+                    int deletedTransactions = gContext.getContentResolver().delete(DatabaseContract.DatabaseEntry.TRANSACTIONS_URI, selection, selectionArgs);
 
                     if (deletedTransactions == 0) {
                         Toast.makeText(gContext, "No Transactions Deleted", Toast.LENGTH_LONG).show();

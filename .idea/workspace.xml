@@ -11,58 +11,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4b9b075-27f6-46a6-8a0e-47d00c21ecce" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/swipeLayout/SwipeAdapter$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/swipeLayout/SwipeAdapter$1$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/swipeLayout/SwipeAdapter$1$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/swipeLayout/SwipeAdapter$1$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/swipeLayout/SwipeAdapter$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/swipeLayout/SwipeAdapter$2$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/swipeLayout/SwipeAdapter$2$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/swipeLayout/SwipeAdapter$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/swipeLayout/SwipeAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/ic_launcher_round.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_launcher_round.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_launcher_round.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxhdpi-v4/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxhdpi-v4/ic_launcher_round.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/AddAmountActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/AddAmountActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/AddAmountActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/AddAmountActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/R$mipmap.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/R$mipmap.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/data/Adapters/AmountsCursorAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/data/Adapters/AmountsCursorAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/data/Adapters/TransactionsCursorAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/data/Adapters/TransactionsCursorAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/data/data/DatabaseContentProvider.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/data/data/DatabaseContentProvider.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/swipeLayout/AddAmountSwipeAdapter$1$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/swipeLayout/AddAmountSwipeAdapter$1$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/swipeLayout/AddAmountSwipeAdapter$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/swipeLayout/AddAmountSwipeAdapter$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/swipeLayout/AddAmountSwipeAdapter$2$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/swipeLayout/AddAmountSwipeAdapter$2$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/swipeLayout/AddAmountSwipeAdapter$2$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/swipeLayout/AddAmountSwipeAdapter$2$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/swipeLayout/AddAmountSwipeAdapter$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/swipeLayout/AddAmountSwipeAdapter$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/swipeLayout/AddAmountSwipeAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/w/moneymanager/swipeLayout/AddAmountSwipeAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/debug_d82a466fa02f30a7196ddc46326edcdfd9c6f06b.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/debug_d82a466fa02f30a7196ddc46326edcdfd9c6f06b.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_launcher.png" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_launcher_round.png" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_launcher_round.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/w/moneymanager/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/w/moneymanager/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/layout.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/mipmap-hdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/mipmap-hdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/mipmap-mdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/mipmap-mdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/mipmap-xhdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/mipmap-xhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/mipmap-xxhdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/mipmap-xxhdpi-v4.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/edit_dialog.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/edit_dialog.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/swipe_transaction.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/swipe_transaction.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/w/moneymanager/data/Adapters/TransactionsCursorAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/w/moneymanager/data/Adapters/TransactionsCursorAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/w/moneymanager/data/data/DatabaseContentProvider.java" afterPath="$PROJECT_DIR$/app/src/main/java/w/moneymanager/data/data/DatabaseContentProvider.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/w/moneymanager/swipeLayout/AddAmountSwipeAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/w/moneymanager/swipeLayout/AddAmountSwipeAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/edit_dialog.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/edit_dialog.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/swipe_transaction.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/swipe_transaction.xml" />
     </list>
     <ignored path="MoneyManager.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,18 +79,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="AddAmountSwipeAdapter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AddAmountSwipeAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/w/moneymanager/swipeLayout/AddAmountSwipeAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="291" column="0" selection-start-line="291" selection-start-column="0" selection-end-line="291" selection-end-column="0" />
+            <state relative-caret-position="176">
+              <caret line="285" column="156" selection-start-line="285" selection-start-column="156" selection-end-line="285" selection-end-column="156" />
               <folding>
-                <element signature="e#7341#7654#0" expanded="true" />
-                <element signature="e#7653#7654#0" expanded="true" />
-                <element signature="e#7885#10182#0" expanded="true" />
-                <element signature="e#10181#10182#0" expanded="true" />
-                <element signature="e#11336#12710#0" expanded="true" />
-                <element signature="e#12709#12710#0" expanded="true" />
+                <element signature="e#7336#7649#0" expanded="true" />
+                <element signature="e#7648#7649#0" expanded="true" />
+                <element signature="e#7880#10175#0" expanded="true" />
+                <element signature="e#10174#10175#0" expanded="true" />
+                <element signature="e#11389#12805#0" expanded="true" />
+                <element signature="e#12804#12805#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,32 +99,22 @@
       <file leaf-file-name="FragmentHomeActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/w/moneymanager/FragmentHomeActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="122" column="70" selection-start-line="122" selection-start-column="70" selection-end-line="122" selection-end-column="70" />
+            <state relative-caret-position="330">
+              <caret line="120" column="8" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml">
+      <file leaf-file-name="TransactionsCursorAdapter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/w/moneymanager/data/Adapters/TransactionsCursorAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dialog_trans.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_trans.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="261">
+              <caret line="82" column="45" selection-start-line="82" selection-start-column="45" selection-end-line="82" selection-end-column="45" />
+              <folding>
+                <element signature="e#2820#3657#0" expanded="true" />
+                <element signature="e#3656#3657#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -147,8 +122,8 @@
       <file leaf-file-name="DatabaseContentProvider.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/w/moneymanager/data/data/DatabaseContentProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="155" column="23" selection-start-line="155" selection-start-column="23" selection-end-line="155" selection-end-column="23" />
+            <state relative-caret-position="261">
+              <caret line="154" column="121" selection-start-line="154" selection-start-column="121" selection-end-line="154" selection-end-column="121" />
               <folding />
             </state>
           </provider>
@@ -1854,6 +1829,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/w/moneymanager/swipeLayout/SwipeAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/edit_dialog.xml" />
         <option value="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/swipe_transaction.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/w/moneymanager/data/Adapters/TransactionsCursorAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/w/moneymanager/data/data/DatabaseContentProvider.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/w/moneymanager/swipeLayout/AddAmountSwipeAdapter.java" />
       </list>
@@ -2035,6 +2012,10 @@
               <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Adapters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -2057,7 +2038,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="1.5.0" />
-    <property name="device.picker.selection" value="Nexus_5X_API_23" />
+    <property name="device.picker.selection" value="410068b2e4afa1e1" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -2399,7 +2380,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38352942" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5235294" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2518,14 +2499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/w/moneymanager/FragmentHomeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="122" column="70" selection-start-line="122" selection-start-column="70" selection-end-line="122" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -2534,25 +2507,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/swipe_amount.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/swipe_transaction.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/w/moneymanager/data/data/DatabaseContentProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="155" column="23" selection-start-line="155" selection-start-column="23" selection-end-line="155" selection-end-column="23" />
+        <state relative-caret-position="261">
+          <caret line="154" column="121" selection-start-line="154" selection-start-column="121" selection-end-line="154" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/w/moneymanager/FragmentHomeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="120" column="8" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/w/moneymanager/swipeLayout/AddAmountSwipeAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="291" column="0" selection-start-line="291" selection-start-column="0" selection-end-line="291" selection-end-column="0" />
+        <state relative-caret-position="176">
+          <caret line="285" column="156" selection-start-line="285" selection-start-column="156" selection-end-line="285" selection-end-column="156" />
           <folding>
-            <element signature="e#7341#7654#0" expanded="true" />
-            <element signature="e#7653#7654#0" expanded="true" />
-            <element signature="e#7885#10182#0" expanded="true" />
-            <element signature="e#10181#10182#0" expanded="true" />
-            <element signature="e#11336#12710#0" expanded="true" />
-            <element signature="e#12709#12710#0" expanded="true" />
+            <element signature="e#7336#7649#0" expanded="true" />
+            <element signature="e#7648#7649#0" expanded="true" />
+            <element signature="e#7880#10175#0" expanded="true" />
+            <element signature="e#10174#10175#0" expanded="true" />
+            <element signature="e#11389#12805#0" expanded="true" />
+            <element signature="e#12804#12805#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/w/moneymanager/data/Adapters/TransactionsCursorAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="82" column="45" selection-start-line="82" selection-start-column="45" selection-end-line="82" selection-end-column="45" />
+          <folding>
+            <element signature="e#2820#3657#0" expanded="true" />
+            <element signature="e#3656#3657#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -264,6 +264,10 @@
         "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.1\\res\\layout\\design_layout_tab_text.xml"
     },
     {
+        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\swipe_amount.xml",
+        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\src\\main\\res\\layout\\swipe_amount.xml"
+    },
+    {
         "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
         "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\layout\\abc_select_dialog_material.xml"
     },

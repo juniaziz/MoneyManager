@@ -3780,9 +3780,10 @@ containing a value of this type.
         public static final int select_dialog_multichoice_material=0x7f040040;
         public static final int select_dialog_singlechoice_material=0x7f040041;
         public static final int support_simple_spinner_dropdown_item=0x7f040042;
-        public static final int swipe_transaction=0x7f040043;
-        public static final int swipe_view=0x7f040044;
-        public static final int tooltip=0x7f040045;
+        public static final int swipe_amount=0x7f040043;
+        public static final int swipe_transaction=0x7f040044;
+        public static final int swipe_view=0x7f040045;
+        public static final int tooltip=0x7f040046;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
