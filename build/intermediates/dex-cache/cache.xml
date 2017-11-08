@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\26.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="083e7bc5a9d9404b49b8f34e5091532361fa28e6">
+        <dex dex="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-26.0.1_7c025aedb280edf162afaed74ec993a4aacafdf2.jar" />
+    </item>
+    <item
+        jar="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\26.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="e7424f816f538c2acfba6169b25e297ea22afbd8">
+        <dex dex="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-26.0.1_f993a0e0384bc609176e98d156fee8c901d0644b.jar" />
+    </item>
+    <item
+        jar="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\26.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="d095503f29a8dedc55b9326ed97a5902a1527ab9">
+        <dex dex="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-26.0.1_f4d6c23d2b228f20f4f87b21334bde91c707cae8.jar" />
+    </item>
+    <item
+        jar="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\exploded-aar\com.android.support\design\26.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="c390af22079a61fdc42712c19f15a700f1fc2cbf">
+        <dex dex="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\pre-dexed\debug\com.android.support-design-26.0.1_8e8610ebd79bc0537027cef04bb7a18130df8aad.jar" />
+    </item>
+    <item
+        jar="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\26.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="71af915b7f4f7ec0b5f768b365145bb6a5cb9a66">
+        <dex dex="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-26.0.1_09d4798bc4107cb7005c1bc38853da914a1a6baf.jar" />
+    </item>
+    <item
+        jar="C:\Users\mjfor\.gradle\caches\modules-2\files-2.1\com.android.support.constraint\constraint-layout-solver\1.0.2\b9cd8fc6bd15cb915735d34535db30ece0c44603\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_260b7d4dc65375867ac7f3baa00c7b4921280048.jar" />
+    </item>
+    <item
+        jar="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\exploded-aar\com.android.support\support-fragment\26.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="dff4d8f88fe2c0e57306e6981fd9b90caeead7e3">
+        <dex dex="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-26.0.1_83d98c0e9f24644367eb67f0195bac966f17d91a.jar" />
+    </item>
+    <item
+        jar="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\26.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="5b65ec1ebc84af3baecfd28954c9e7ff01b937a8">
+        <dex dex="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-26.0.1_4919780a79c34bd7b557b4e5c6b55c4534f72175.jar" />
+    </item>
+    <item
+        jar="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\exploded-aar\com.android.support\support-v4\26.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-26.0.1_c09f1890bceebc68cea7b71b816945a8b87eae57.jar" />
+    </item>
+    <item
+        jar="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.2\jars\classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\pre-dexed\debug\com.android.support.constraint-constraint-layout-1.0.2_c282d6110c5a1da61cc0cfdedec22364cf69189a.jar" />
+    </item>
+    <item
+        jar="C:\Users\mjfor\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\26.0.1\e1bb32b12b25e2f78e6786059ca7ea878f8345e0\support-annotations-26.0.1.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="e1bb32b12b25e2f78e6786059ca7ea878f8345e0">
+        <dex dex="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\pre-dexed\debug\support-annotations-26.0.1_a714566f371f8abeae9bda73c4279136a185e625.jar" />
+    </item>
+    <item
+        jar="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\26.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="681eeeaec5300e5257ad9bf889c3859ba3833d5a">
+        <dex dex="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-26.0.1_223411dd4a7313566d6f51b33d4da10ed8ef4d26.jar" />
+    </item>
+    <item
+        jar="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\exploded-aar\com.android.support\transition\26.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="56e96fa067ba358a6c60184e40947810dcd78f30">
+        <dex dex="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\pre-dexed\debug\com.android.support-transition-26.0.1_5387119e81dd41c1fd8cc0f74282ff335111ceb9.jar" />
+    </item>
+    <item
+        jar="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\26.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="a4590fa7eadce322ca893129fdc999074e1aa5bf">
+        <dex dex="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-26.0.1_c4ce8996aa2b459cf23ae584ade843524061edb1.jar" />
+    </item>
+    <item
+        jar="C:\Users\mjfor\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.2\3edcfe49d2c6053a70a2a47e4e1c2f94998a49cf\gson-2.8.2.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="3edcfe49d2c6053a70a2a47e4e1c2f94998a49cf">
+        <dex dex="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\pre-dexed\debug\gson-2.8.2_24ce9aad87411d6577e848f9af661ff5f944f42b.jar" />
+    </item>
+    <item
+        jar="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\exploded-aar\com.android.support\support-compat\26.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="22c673e65215e0764add61e3102946de895439e4">
+        <dex dex="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-26.0.1_c116cffe0c725377e4caa80e8e53165e6c7ed12d.jar" />
+    </item>
+    <item
+        jar="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\exploded-aar\com.daimajia.swipelayout\library\1.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="26.0.1"
+        sha1="e84b30031d4bab89a2b5c45af4eb9213828524dd">
+        <dex dex="D:\Documents\AndroidyStuff\MoneyManager\app\build\intermediates\pre-dexed\debug\com.daimajia.swipelayout-library-1.2.0_ed03ac81a2a5d1f8af4f1675726c6158fca6ec0b.jar" />
+    </item>
+
+</items>
