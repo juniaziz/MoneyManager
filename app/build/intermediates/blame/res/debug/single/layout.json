@@ -124,6 +124,10 @@
         "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\layout\\abc_alert_dialog_title_material.xml"
     },
     {
+        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\edit_dialog.xml",
+        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\src\\main\\res\\layout\\edit_dialog.xml"
+    },
+    {
         "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
         "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\layout\\abc_expanded_menu_layout.xml"
     },

@@ -31,7 +31,7 @@ import com.daimajia.swipe.util.Attributes;
 import java.text.SimpleDateFormat;
 
 import w.moneymanager.data.data.DatabaseContract.DatabaseEntry;
-import w.moneymanager.swipeLayout.SwipeAdapter;
+import w.moneymanager.swipeLayout.AddAmountSwipeAdapter;
 
 
 public class AddAmountActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks <Cursor>{
@@ -39,7 +39,7 @@ public class AddAmountActivity extends AppCompatActivity implements LoaderManage
     private static final int AMOUNTS_LOADER = 2;
 
     ListView amountListView;
-    private SwipeAdapter swipeAdapter;
+    private AddAmountSwipeAdapter swipeAdapter;
     SwipeLayout swipeLayout;
 
 
@@ -54,7 +54,7 @@ public class AddAmountActivity extends AppCompatActivity implements LoaderManage
 
         getSupportLoaderManager().initLoader(AMOUNTS_LOADER, null, this);
 
-        swipeAdapter = new SwipeAdapter(this, null);
+        swipeAdapter = new AddAmountSwipeAdapter(this, null);
         swipeAdapter.setMode(Attributes.Mode.Single);
         amountListView.setAdapter(swipeAdapter);
         amountListView.setOnItemClickListener(onItemSelected);

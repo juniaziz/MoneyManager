@@ -2,19 +2,26 @@ package w.moneymanager.swipeLayout;
 
 import android.app.Dialog;
 import android.content.ContentUris;
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.CursorIndexOutOfBoundsException;
 import android.database.DatabaseUtils;
 import android.graphics.Color;
 import android.net.Uri;
+import android.support.annotation.IdRes;
+import android.support.v4.app.DialogFragment;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,6 +29,7 @@ import android.widget.Toast;
 import com.daimajia.swipe.adapters.CursorSwipeAdapter;
 
 import w.moneymanager.AddAmountActivity;
+import w.moneymanager.DatePickerFragment;
 import w.moneymanager.R;
 import w.moneymanager.data.data.DatabaseContract;
 
@@ -31,7 +39,7 @@ import static android.os.Build.ID;
  * Created by nikunjkumar on 11/6/17.
  */
 
-public class SwipeAdapter extends CursorSwipeAdapter  {
+public class AddAmountSwipeAdapter extends CursorSwipeAdapter  {
 
     Context gContext;
 
@@ -40,7 +48,7 @@ public class SwipeAdapter extends CursorSwipeAdapter  {
     String _ID;
     int id;
 
-    public SwipeAdapter(Context context, Cursor c){
+    public AddAmountSwipeAdapter(Context context, Cursor c){
         super(context, c, 0);
         this.gContext = context;
 
@@ -113,7 +121,7 @@ public class SwipeAdapter extends CursorSwipeAdapter  {
 
     }
 
-    View.OnClickListener onEditItemClicked = new View.OnClickListener() {
+    private View.OnClickListener onEditItemClicked = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             Cursor gCursor = null;
@@ -122,7 +130,7 @@ public class SwipeAdapter extends CursorSwipeAdapter  {
             Log.d("mPosition", " " + id);
 
             final Dialog dialog = new Dialog(gContext);
-            dialog.setContentView(R.layout.dialog_trans);
+            dialog.setContentView(R.layout.edit_dialog);
             dialog.setTitle("Delete");
             dialog.setCancelable(true);
             dialog.show();
@@ -132,6 +140,10 @@ public class SwipeAdapter extends CursorSwipeAdapter  {
             final EditText currencyEditText = dialog.findViewById(R.id.currency_textfield);
             final EditText descriptionEditText = dialog.findViewById(R.id.description_textfield);
             final RadioGroup radioGroup = dialog.findViewById(R.id.radioGroup);
+            final Button saveChanges = dialog.findViewById(R.id.btn_save_changes);
+
+
+
 
             String[] projection = {
                     DatabaseContract.DatabaseEntry._ID,
@@ -144,7 +156,7 @@ public class SwipeAdapter extends CursorSwipeAdapter  {
 
 
 
-            Uri currentAmountUri = ContentUris.withAppendedId(DatabaseContract.DatabaseEntry.AMOUNTS_URI, id);
+            final Uri currentAmountUri = ContentUris.withAppendedId(DatabaseContract.DatabaseEntry.AMOUNTS_URI, id);
 
             try {
                 gCursor = gContext.getContentResolver().query(currentAmountUri, projection, null, null, null);
@@ -158,6 +170,8 @@ public class SwipeAdapter extends CursorSwipeAdapter  {
                     String amount = gCursor.getString(gCursor.getColumnIndexOrThrow(DatabaseContract.DatabaseEntry.COLUMN_AMOUNT));
                     String currentBalance = gCursor.getString(gCursor.getColumnIndexOrThrow(DatabaseContract.DatabaseEntry.COLUMN_CURRENT_BALANCE));
 
+
+
                     Log.d("Type : ", type);
 
                     if (type.equals("Going")) {
@@ -170,18 +184,110 @@ public class SwipeAdapter extends CursorSwipeAdapter  {
 
                     descriptionEditText.setText(description);
                     selectedDateTextView.setText(date);
+                    selectedDateTextView.setEnabled(false);
                     currencyEditText.setText(currency);
                     amountEditText.setText(amount);
+
+                    if (!(amount.equalsIgnoreCase(currentBalance))){
+                       amountEditText.setFocusable(false);
+
+                        amountEditText.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Toast.makeText(gContext, "Cannot change amounts with transactions", Toast.LENGTH_LONG).show();
+                            }
+                        });
+
+                    }
+
+                    TextWatcher textWatcher = new TextWatcher() {
+                        @Override
+                        public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                            saveChanges.setEnabled(false);
+                        }
+
+                        @Override
+                        public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                            saveChanges.setEnabled(false);
+                        }
+
+                        @Override
+                        public void afterTextChanged(Editable editable) {
+                            saveChanges.setEnabled(true);
+                        }
+                    };
+
+                    RadioGroup.OnCheckedChangeListener checkedChangeListener = new RadioGroup.OnCheckedChangeListener() {
+                        @Override
+                        public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
+                            saveChanges.setEnabled(true);
+                        }
+                    };
+
+                    descriptionEditText.addTextChangedListener(textWatcher);
+                    selectedDateTextView.addTextChangedListener(textWatcher);
+                    currencyEditText.addTextChangedListener(textWatcher);
+                    amountEditText.addTextChangedListener(textWatcher);
+                    radioGroup.setOnCheckedChangeListener(checkedChangeListener);
+
+                    saveChanges.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+
+                            final int selectId = radioGroup.getCheckedRadioButtonId();
+                            final RadioButton radioButtonID = dialog.findViewById(selectId);
+
+                            String amount = amountEditText.getText().toString().trim();
+                            String currency = currencyEditText.getText().toString().trim();
+                            String description = descriptionEditText.getText().toString().trim();
+                            String selectedDate = selectedDateTextView.getText().toString().trim();
+                            String radioButton = radioButtonID.getText().toString();
+
+
+                            ContentValues values = new ContentValues();
+
+                            values.put(DatabaseContract.DatabaseEntry.COLUMN_AMOUNT, amount);
+                            values.put(DatabaseContract.DatabaseEntry.COLUMN_CURRENCY, currency);
+                            values.put(DatabaseContract.DatabaseEntry.COLUMN_TYPE, radioButton);
+                            values.put(DatabaseContract.DatabaseEntry.COLUMN_DATE, selectedDate);
+                            values.put(DatabaseContract.DatabaseEntry.COLUMN_DESCRIPTION, description);
+
+                            Log.d("Type from values: ", String.valueOf(values.getAsString(DatabaseContract.DatabaseEntry.COLUMN_TYPE)));
+
+                            try {
+                                int rowsAffected = gContext.getContentResolver().update(currentAmountUri, values, null, null);
+
+                                if (rowsAffected == 0) {
+                                    Toast.makeText(gContext, "Update Failed", Toast.LENGTH_SHORT).show();
+                                }
+                                else {
+                                    Toast.makeText(gContext, "Update Successful", Toast.LENGTH_SHORT).show();
+                                }
+                            } finally {
+                                System.out.print("Unexpected error");
+                                dialog.dismiss();
+                            }
+
+                            dialog.dismiss();
+
+
+                        }
+                    });
+
+
                 }
             }
             catch (CursorIndexOutOfBoundsException e){
                 Log.d("mPosition Cursor error:", " " + gCursor.getCount() + " " + DatabaseUtils.dumpCursorToString(gCursor));
             }
+
+
+
         }
     };
 
 
-    View.OnClickListener onDeleteClicked = new View.OnClickListener() {
+    private View.OnClickListener onDeleteClicked = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             final Dialog dialog = new Dialog(gContext);

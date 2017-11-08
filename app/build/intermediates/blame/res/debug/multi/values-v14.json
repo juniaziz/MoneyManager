@@ -122,10 +122,10 @@
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 55,
+                        "startOffset": 57,
                         "endLine": 6,
                         "endColumn": 12,
-                        "endOffset": 326
+                        "endOffset": 332
                     }
                 }
             },
@@ -142,9 +142,9 @@
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 331,
+                        "startOffset": 338,
                         "endColumn": 70,
-                        "endOffset": 397
+                        "endOffset": 404
                     }
                 }
             },
@@ -161,9 +161,9 @@
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 402,
+                        "startOffset": 410,
                         "endColumn": 82,
-                        "endOffset": 480
+                        "endOffset": 488
                     }
                 }
             },
@@ -181,10 +181,10 @@
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 485,
+                        "startOffset": 494,
                         "endLine": 14,
                         "endColumn": 12,
-                        "endOffset": 890
+                        "endOffset": 904
                     }
                 }
             },
@@ -202,10 +202,10 @@
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 895,
+                        "startOffset": 910,
                         "endLine": 20,
                         "endColumn": 12,
-                        "endOffset": 1312
+                        "endOffset": 1332
                     }
                 }
             }
