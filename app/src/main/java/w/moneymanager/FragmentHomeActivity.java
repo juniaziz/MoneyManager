@@ -14,7 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import w.moneymanager.data.Adapters.TransactionsCursorAdapter;
+import w.moneymanager.data.Adapters.TransactionsSwipeAdapter;
 import w.moneymanager.data.data.DatabaseContract.DatabaseEntry;
 
 
@@ -31,7 +31,7 @@ public class FragmentHomeActivity extends Fragment implements LoaderManager.Load
 
     private static String PARENT_AMOUNT_ID;
 
-    TransactionsCursorAdapter mTransactionCursorAdapter;
+    TransactionsSwipeAdapter mTransactionCursorAdapter;
 
     //Every fragment needs some methods to be used
 
@@ -62,7 +62,7 @@ public class FragmentHomeActivity extends Fragment implements LoaderManager.Load
 
         rootView = inflater.inflate(R.layout.fragment_home_activity, container, false);
 
-        mTransactionCursorAdapter = new TransactionsCursorAdapter(getContext(), null);
+        mTransactionCursorAdapter = new TransactionsSwipeAdapter(getContext(), null);
 
         getLoaderManager().initLoader(TRANSACTION_LOADER, null, this);
 
@@ -110,8 +110,6 @@ public class FragmentHomeActivity extends Fragment implements LoaderManager.Load
                 DatabaseEntry.COLUMN_PARENT_AMOUNT};
 
         String selection = DatabaseEntry.COLUMN_PARENT_AMOUNT + "=?";
-
-
 
         /*
         In case of the integer casting into String

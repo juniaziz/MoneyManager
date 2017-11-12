@@ -1,14 +1,6 @@
 [
     {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\layout-v16\\notification_template_custom_big.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\support-compat\\26.0.1\\res\\layout-v16\\notification_template_custom_big.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\layout-v16\\notification_template_custom_big.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\support-compat\\26.0.1\\res\\layout-v16\\notification_template_custom_big.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\layout-v16\\notification_template_custom_big.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\support-compat\\26.0.1\\res\\layout-v16\\notification_template_custom_big.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/layout-v16/notification_template_custom_big.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/support-compat/26.0.1/res/layout-v16/notification_template_custom_big.xml"
     }
 ]

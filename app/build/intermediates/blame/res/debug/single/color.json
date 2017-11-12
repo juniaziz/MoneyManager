@@ -1,254 +1,86 @@
 [
     {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_borderless_text_material.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_btn_colored_borderless_text_material.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/color/abc_primary_text_disable_only_material_light.xml"
     },
     {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\switch_thumb_material_light.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/color/abc_btn_colored_text_material.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/color/abc_btn_colored_text_material.xml"
     },
     {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_tint_password_toggle.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.1\\res\\color\\design_tint_password_toggle.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/color/abc_primary_text_material_light.xml"
     },
     {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_tint_password_toggle.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.1\\res\\color\\design_tint_password_toggle.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/color/design_tint_password_toggle.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/design/26.0.1/res/color/design_tint_password_toggle.xml"
     },
     {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_primary_text_material_light.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_light.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/color/abc_hint_foreground_material_light.xml"
     },
     {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_spinner.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_tint_spinner.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/color/switch_thumb_material_dark.xml"
     },
     {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/color/abc_secondary_text_material_dark.xml"
     },
     {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.1\\res\\color\\design_error.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/color/abc_primary_text_material_dark.xml"
     },
     {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\switch_thumb_material_dark.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/color/abc_tint_default.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/color/abc_tint_default.xml"
     },
     {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_track.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_tint_switch_track.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/color/abc_tint_seek_thumb.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/color/abc_tint_seek_thumb.xml"
     },
     {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/color/abc_search_url_text.xml"
     },
     {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_track.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_tint_switch_track.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/color/abc_btn_colored_borderless_text_material.xml"
     },
     {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_default.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_tint_default.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/color/design_error.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/design/26.0.1/res/color/design_error.xml"
     },
     {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_search_url_text.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/color/abc_tint_spinner.xml"
     },
     {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_seek_thumb.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_tint_seek_thumb.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/color/abc_secondary_text_material_light.xml"
     },
     {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_seek_thumb.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_tint_seek_thumb.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/color/abc_tint_btn_checkable.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/color/abc_tint_btn_checkable.xml"
     },
     {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_search_url_text.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/color/abc_primary_text_disable_only_material_dark.xml"
     },
     {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_dark.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/color/abc_hint_foreground_material_dark.xml"
     },
     {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_seek_thumb.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_tint_seek_thumb.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/color/switch_thumb_material_light.xml"
     },
     {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_dark.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_hint_foreground_material_dark.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/color/abc_tint_edittext.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/color/abc_tint_edittext.xml"
     },
     {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_search_url_text.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_default.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_tint_default.xml"
-    },
-    {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_secondary_text_material_dark.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_btn_checkable.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_tint_btn_checkable.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_spinner.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_tint_spinner.xml"
-    },
-    {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_secondary_text_material_light.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_borderless_text_material.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_btn_colored_borderless_text_material.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_primary_text_material_dark.xml"
-    },
-    {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_text_material.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_btn_colored_text_material.xml"
-    },
-    {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_spinner.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_tint_spinner.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_dark.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_hint_foreground_material_dark.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.1\\res\\color\\design_error.xml"
-    },
-    {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_edittext.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_tint_edittext.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_hint_foreground_material_light.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_edittext.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_tint_edittext.xml"
-    },
-    {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_primary_text_material_dark.xml"
-    },
-    {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_secondary_text_material_dark.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_edittext.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_tint_edittext.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_primary_text_material_light.xml"
-    },
-    {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_borderless_text_material.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_btn_colored_borderless_text_material.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_text_material.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_btn_colored_text_material.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\switch_thumb_material_light.xml"
-    },
-    {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\switch_thumb_material_light.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_default.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_tint_default.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_tint_password_toggle.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.1\\res\\color\\design_tint_password_toggle.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_dark.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_hint_foreground_material_dark.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_btn_checkable.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_tint_btn_checkable.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\switch_thumb_material_dark.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_secondary_text_material_light.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_text_material.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_btn_colored_text_material.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_secondary_text_material_light.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_hint_foreground_material_light.xml"
-    },
-    {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_track.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_tint_switch_track.xml"
-    },
-    {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_btn_checkable.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_tint_btn_checkable.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_primary_text_material_light.xml"
-    },
-    {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\switch_thumb_material_dark.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_secondary_text_material_dark.xml"
-    },
-    {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_hint_foreground_material_light.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color\\abc_primary_text_material_dark.xml"
-    },
-    {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\26.0.1\\res\\color\\design_error.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/color/abc_tint_switch_track.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/color/abc_tint_switch_track.xml"
     }
 ]

@@ -1,26 +1,10 @@
 [
     {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
     },
     {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
-    },
-    {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.1\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
     }
 ]

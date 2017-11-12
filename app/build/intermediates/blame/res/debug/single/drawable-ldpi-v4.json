@@ -1,98 +1,34 @@
 [
     {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\abc_ic_voice_search_api_material.png",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\abc_ic_voice_search_api_material.png"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_ic_search_api_material.png",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/generated/res/pngs/debug/drawable-ldpi/abc_ic_search_api_material.png"
     },
     {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\abc_ic_ab_back_material.png",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\abc_ic_ab_back_material.png"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_ic_go_search_api_material.png",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/generated/res/pngs/debug/drawable-ldpi/abc_ic_go_search_api_material.png"
     },
     {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\abc_ic_clear_material.png",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\abc_ic_clear_material.png"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_ic_menu_overflow_material.png",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/generated/res/pngs/debug/drawable-ldpi/abc_ic_menu_overflow_material.png"
     },
     {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\abc_ic_menu_overflow_material.png",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\abc_ic_menu_overflow_material.png"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_vector_test.png",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/generated/res/pngs/debug/drawable-ldpi/abc_vector_test.png"
     },
     {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\abc_ic_go_search_api_material.png",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\abc_ic_go_search_api_material.png"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_ic_clear_material.png",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/generated/res/pngs/debug/drawable-ldpi/abc_ic_clear_material.png"
     },
     {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\abc_ic_search_api_material.png",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\abc_ic_search_api_material.png"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_ic_arrow_drop_right_black_24dp.png",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/generated/res/pngs/debug/drawable-ldpi/abc_ic_arrow_drop_right_black_24dp.png"
     },
     {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\abc_ic_voice_search_api_material.png",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\abc_ic_voice_search_api_material.png"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_ic_voice_search_api_material.png",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/generated/res/pngs/debug/drawable-ldpi/abc_ic_voice_search_api_material.png"
     },
     {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\abc_ic_menu_overflow_material.png",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\abc_ic_menu_overflow_material.png"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\abc_vector_test.png",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\abc_vector_test.png"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\abc_ic_clear_material.png",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\abc_ic_clear_material.png"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\abc_ic_search_api_material.png",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\abc_ic_search_api_material.png"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\abc_vector_test.png",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\abc_vector_test.png"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\abc_ic_menu_overflow_material.png",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\abc_ic_menu_overflow_material.png"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\abc_ic_voice_search_api_material.png",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\abc_ic_voice_search_api_material.png"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\abc_ic_arrow_drop_right_black_24dp.png",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\abc_ic_arrow_drop_right_black_24dp.png"
-    },
-    {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\abc_ic_ab_back_material.png",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\abc_ic_ab_back_material.png"
-    },
-    {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\abc_vector_test.png",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\abc_vector_test.png"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\abc_ic_clear_material.png",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\abc_ic_clear_material.png"
-    },
-    {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\abc_ic_arrow_drop_right_black_24dp.png",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\abc_ic_arrow_drop_right_black_24dp.png"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\abc_ic_arrow_drop_right_black_24dp.png",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\abc_ic_arrow_drop_right_black_24dp.png"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\abc_ic_ab_back_material.png",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\abc_ic_ab_back_material.png"
-    },
-    {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\abc_ic_search_api_material.png",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\abc_ic_search_api_material.png"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\abc_ic_go_search_api_material.png",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\abc_ic_go_search_api_material.png"
-    },
-    {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\abc_ic_go_search_api_material.png",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\abc_ic_go_search_api_material.png"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_ic_ab_back_material.png",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/generated/res/pngs/debug/drawable-ldpi/abc_ic_ab_back_material.png"
     }
 ]

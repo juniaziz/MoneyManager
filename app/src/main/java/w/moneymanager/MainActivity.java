@@ -185,41 +185,57 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                     String radioButton = radioButtonID.getText().toString();
                     String selectedDate = selectedDateTextView.getText().toString().trim();
 
-                    Double newBalance = Double.parseDouble(parentCurrentBalance) - Double.parseDouble(enteredAmount);
-
-                    ContentValues newBalanceValue = new ContentValues();
-                    newBalanceValue.put(DatabaseEntry.COLUMN_CURRENT_BALANCE, Double.toString(newBalance));
-
-                    int rowsAffected = getContentResolver().update(parent_ID_URL, newBalanceValue, null, null);
-
-                    if (rowsAffected == 0) {
-                        // If no rows were affected, then there was an error with the update.
-                        Toast.makeText(MainActivity.this, "Update Failed", Toast.LENGTH_SHORT).show();
-                    } else {
-                        // Otherwise, the update was successful and we can display a toast.
-                        Toast.makeText(MainActivity.this, "Update Successful", Toast.LENGTH_SHORT).show();
+                    if (description.isEmpty()){
+                        Toast.makeText(MainActivity.this, "Description cannot be empty", Toast.LENGTH_LONG).show();
                     }
-
-                    ContentValues values = new ContentValues();
-
-                    values.put(DatabaseEntry.COLUMN_AMOUNT, enteredAmount);
-                    values.put(DatabaseEntry.COLUMN_CURRENCY, currency);
-                    values.put(DatabaseEntry.COLUMN_TYPE, radioButton);
-                    values.put(DatabaseEntry.COLUMN_DATE, selectedDate);
-                    values.put(DatabaseEntry.COLUMN_DESCRIPTION, description);
-                    values.put(DatabaseEntry.COLUMN_PARENT_AMOUNT, parent_ID);
-
-                    Log.d("Type from values: ", String.valueOf(values.getAsString(DatabaseEntry.COLUMN_TYPE)));
-
-                    Uri newUri = getContentResolver().insert(DatabaseEntry.TRANSACTIONS_URI, values);
-
-                    if (newUri == null) {
-                        // If the new content URI is null, then there was an error with insertion.
-                        Toast.makeText(MainActivity.this, "Insert transaction failed", Toast.LENGTH_SHORT).show();
+                    else if (currency.isEmpty()) {
+                        Toast.makeText(MainActivity.this, "currency cannot be empty", Toast.LENGTH_LONG).show();
                     }
+                    else if (enteredAmount.isEmpty() || description.isEmpty() || currency.isEmpty()) {
+                        Toast.makeText(MainActivity.this, "Amount cannot be empty", Toast.LENGTH_LONG).show();
+                    }
+                    else {
+                        Double newBalance = 0.0;
 
-                    dialog.dismiss();
+                        if (radioButton.equalsIgnoreCase("Going")){
+                           newBalance = Double.parseDouble(parentCurrentBalance) - Double.parseDouble(enteredAmount);
+                        } else if (radioButton.equalsIgnoreCase("Coming")){
+                            newBalance = Double.parseDouble(parentCurrentBalance) + Double.parseDouble(enteredAmount);
+                        }
 
+                        if (newBalance >= 0.0) {
+                            ContentValues newBalanceValue = new ContentValues();
+                            newBalanceValue.put(DatabaseEntry.COLUMN_CURRENT_BALANCE, Double.toString(newBalance));
+
+                            int rowsAffected = getContentResolver().update(parent_ID_URL, newBalanceValue, null, null);
+                            if (rowsAffected == 0) {
+                                // If no rows were affected, then there was an error with the update.
+                                Toast.makeText(MainActivity.this, "Update Failed", Toast.LENGTH_SHORT).show();
+                            } else {
+                                // Otherwise, the update was successful and we can display a toast.
+                                Toast.makeText(MainActivity.this, "Update Successful", Toast.LENGTH_SHORT).show();
+                            }
+
+                            ContentValues values = new ContentValues();
+
+                            values.put(DatabaseEntry.COLUMN_AMOUNT, enteredAmount);
+                            values.put(DatabaseEntry.COLUMN_CURRENCY, currency);
+                            values.put(DatabaseEntry.COLUMN_TYPE, radioButton);
+                            values.put(DatabaseEntry.COLUMN_DATE, selectedDate);
+                            values.put(DatabaseEntry.COLUMN_DESCRIPTION, description);
+                            values.put(DatabaseEntry.COLUMN_PARENT_AMOUNT, parent_ID);
+
+                            Log.d("Type from values: ", String.valueOf(values.getAsString(DatabaseEntry.COLUMN_TYPE)));
+                            Uri newUri = getContentResolver().insert(DatabaseEntry.TRANSACTIONS_URI, values);
+                            if (newUri == null) {
+                                // If the new content URI is null, then there was an error with insertion.
+                                Toast.makeText(MainActivity.this, "Insert transaction failed", Toast.LENGTH_SHORT).show();
+                            }
+                            dialog.dismiss();
+                        } else {
+                            Toast.makeText(MainActivity.this, "Update Failed because of Calculation", Toast.LENGTH_SHORT).show();
+                        }
+                    }
                 }
             });
         }

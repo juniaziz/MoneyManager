@@ -1,50 +1,18 @@
 [
     {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\support-compat\\26.0.1\\res\\layout-v21\\notification_template_custom_big.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/support-compat/26.0.1/res/layout-v21/notification_template_icon_group.xml"
     },
     {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\support-compat\\26.0.1\\res\\layout-v21\\notification_template_icon_group.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/support-compat/26.0.1/res/layout-v21/notification_action.xml"
     },
     {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\support-compat\\26.0.1\\res\\layout-v21\\notification_template_icon_group.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/support-compat/26.0.1/res/layout-v21/notification_action_tombstone.xml"
     },
     {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\support-compat\\26.0.1\\res\\layout-v21\\notification_action_tombstone.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\support-compat\\26.0.1\\res\\layout-v21\\notification_template_icon_group.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\support-compat\\26.0.1\\res\\layout-v21\\notification_action.xml"
-    },
-    {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\support-compat\\26.0.1\\res\\layout-v21\\notification_action.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\support-compat\\26.0.1\\res\\layout-v21\\notification_template_custom_big.xml"
-    },
-    {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\support-compat\\26.0.1\\res\\layout-v21\\notification_action_tombstone.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\support-compat\\26.0.1\\res\\layout-v21\\notification_action.xml"
-    },
-    {
-        "merged": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
-        "source": "D:\\Documents\\AndroidyStuff\\Money Manager new\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\support-compat\\26.0.1\\res\\layout-v21\\notification_action_tombstone.xml"
-    },
-    {
-        "merged": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
-        "source": "D:\\JunaidFiles\\MoneyManager\\app\\build\\intermediates\\exploded-aar\\com.android.support\\support-compat\\26.0.1\\res\\layout-v21\\notification_template_custom_big.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/support-compat/26.0.1/res/layout-v21/notification_template_custom_big.xml"
     }
 ]

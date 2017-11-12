@@ -31,6 +31,7 @@
             android:layout_centerHorizontal="true"
             android:fontFamily="sans-serif-medium"
             android:paddingTop="16dp"
+            android:textColor="@color/dark_grey_text"
             android:text="You need to Spend your money!"
             android:textAppearance="?android:textAppearanceMedium"/>
 
@@ -44,7 +45,7 @@
             android:paddingTop="8dp"
             android:text="Get started by adding a transaction"
             android:textAppearance="?android:textAppearanceSmall"
-            android:textColor="#A2AAB0"/>
+            android:textColor="@color/dark_grey_text"/>
     </RelativeLayout>
 
 
@@ -52,6 +53,7 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#FFFFFF"
         android:id="@+id/recycler_view_home_activity">
 
 

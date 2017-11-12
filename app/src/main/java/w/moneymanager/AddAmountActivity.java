@@ -31,7 +31,7 @@ import com.daimajia.swipe.util.Attributes;
 import java.text.SimpleDateFormat;
 
 import w.moneymanager.data.data.DatabaseContract.DatabaseEntry;
-import w.moneymanager.swipeLayout.AddAmountSwipeAdapter;
+import w.moneymanager.data.Adapters.AddAmountSwipeAdapter;
 
 
 public class AddAmountActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks <Cursor>{
@@ -71,8 +71,10 @@ public class AddAmountActivity extends AppCompatActivity implements LoaderManage
 //        amountListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
 //            @Override
 //            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+
 //                Toast.makeText(AddAmountActivity.this, "OnItemLongClickListener", Toast.LENGTH_SHORT).show();
-//                return true;
+//
+//            return true;
 //            }
 //        });
 
@@ -197,8 +199,6 @@ public class AddAmountActivity extends AppCompatActivity implements LoaderManage
             addBtnDialog.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
-
                     final int selectId = radioGroup.getCheckedRadioButtonId();
                     final RadioButton radioButtonID = dialog.findViewById(selectId);
 
@@ -208,31 +208,34 @@ public class AddAmountActivity extends AppCompatActivity implements LoaderManage
                     String selectedDate = selectedDateTextView.getText().toString().trim();
                     String radioButton = radioButtonID.getText().toString();
 
-
-                    ContentValues values = new ContentValues();
-
-                    values.put(DatabaseEntry.COLUMN_AMOUNT, amount);
-                    values.put(DatabaseEntry.COLUMN_CURRENCY, currency);
-                    values.put(DatabaseEntry.COLUMN_TYPE, radioButton);
-                    values.put(DatabaseEntry.COLUMN_DATE, selectedDate);
-                    values.put(DatabaseEntry.COLUMN_DESCRIPTION, description);
-                    values.put(DatabaseEntry.COLUMN_CURRENT_BALANCE, amount);
-
-                    Log.d("Type from values: ", String.valueOf(values.getAsString(DatabaseEntry.COLUMN_TYPE)));
-
-                    Uri newUri = getContentResolver().insert(DatabaseEntry.AMOUNTS_URI, values);
-
-                    if (newUri == null) {
-                        // If the new content URI is null, then there was an error with insertion.
-                        Toast.makeText(AddAmountActivity.this, "Insert transaction failed", Toast.LENGTH_SHORT).show();
+                    if (description.isEmpty()){
+                        Toast.makeText(AddAmountActivity.this, "Description cannot be empty", Toast.LENGTH_LONG).show();
                     }
+                    else if (currency.isEmpty()) {
+                        Toast.makeText(AddAmountActivity.this, "currency cannot be empty", Toast.LENGTH_LONG).show();
+                    }
+                    else if (amount.isEmpty() || description.isEmpty() || currency.isEmpty()) {
+                        Toast.makeText(AddAmountActivity.this, "Amount cannot be empty", Toast.LENGTH_LONG).show();
+                    }
+                    else {
+                        ContentValues values = new ContentValues();
+                        values.put(DatabaseEntry.COLUMN_AMOUNT, amount);
+                        values.put(DatabaseEntry.COLUMN_CURRENCY, currency);
+                        values.put(DatabaseEntry.COLUMN_TYPE, radioButton);
+                        values.put(DatabaseEntry.COLUMN_DATE, selectedDate);
+                        values.put(DatabaseEntry.COLUMN_DESCRIPTION, description);
+                        values.put(DatabaseEntry.COLUMN_CURRENT_BALANCE, amount);
 
-                    dialog.dismiss();
-
+                        Log.d("Type from values: ", String.valueOf(values.getAsString(DatabaseEntry.COLUMN_TYPE)));
+                        Uri newUri = getContentResolver().insert(DatabaseEntry.AMOUNTS_URI, values);
+                        if (newUri == null) {
+                            // If the new content URI is null, then there was an error with insertion.
+                            Toast.makeText(AddAmountActivity.this, "Insert transaction failed", Toast.LENGTH_SHORT).show();
+                        }
+                        dialog.dismiss();
+                    }
                 }
             });
         }
     };
-
-
 }

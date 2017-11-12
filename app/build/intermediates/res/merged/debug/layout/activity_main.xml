@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.android.moneymanager.MainActivity">
+    tools:context="w.moneymanager.MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -35,13 +35,16 @@
                     android:id="@+id/parentAmount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="17sp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/light_grey_text"
                     android:text="This money is just for the RPi Project" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/parentDate"
+                    android:textColor="@color/light_grey_text"
                     android:text="October - November, 2017"
                     android:layout_marginTop="70dp"/>
 
@@ -63,7 +66,7 @@
                     android:layout_centerVertical="true"
                     android:textSize="30sp"
                     android:textStyle="bold"
-                    android:textColor="@color/primary_text"
+                    android:textColor="@color/light_grey_text"
                     android:text="138,0000000"/>
 
                 <TextView
@@ -75,7 +78,7 @@
                     android:textStyle="bold"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="20dp"
-                    android:textColor="@color/primary_text"
+                    android:textColor="@color/light_grey_text"
                     android:layout_toStartOf="@id/parentCurrentBalance"/>
 
             </RelativeLayout>

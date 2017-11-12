@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/coordinatorParentLayout"
-    tools:context="com.example.android.moneymanager.AddAmountActivity">
+    tools:context="w.moneymanager.AddAmountActivity">
 
 
     <RelativeLayout android:id="@+id/empty_view_2"

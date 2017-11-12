@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">MoneyManager</string>
+    <string name="app_name">Money Manager</string>
+    <string name="transactions"> </string>
 </resources>

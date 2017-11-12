@@ -22,7 +22,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="w.moneymanager.MainActivity" >
+        <activity
+            android:name="w.moneymanager.MainActivity"
+            android:label="@string/transactions" >
         </activity>
 
         <provider
