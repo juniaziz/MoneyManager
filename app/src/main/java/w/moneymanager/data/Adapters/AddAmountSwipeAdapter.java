@@ -66,6 +66,8 @@ public class AddAmountSwipeAdapter extends CursorSwipeAdapter  {
         TextView itemCurrency = view.findViewById(R.id.item_currency);
         TextView itemAmount = view.findViewById(R.id.item_amount);
         View typeIndicator = view.findViewById(R.id.type_indicator);
+        TextView itemCurrencySmall = view.findViewById(R.id.item_currency_small);
+        TextView itemAmountSmall = view.findViewById(R.id.item_amount_small);
         ImageView deleteImg = view.findViewById(R.id.swipe_delete);
         ImageView editImg = view.findViewById(R.id.swipe_Edit);
 
@@ -75,12 +77,15 @@ public class AddAmountSwipeAdapter extends CursorSwipeAdapter  {
         String date = cursor.getString(cursor.getColumnIndexOrThrow(DatabaseContract.DatabaseEntry.COLUMN_DATE));
         String currency = cursor.getString(cursor.getColumnIndexOrThrow(DatabaseContract.DatabaseEntry.COLUMN_CURRENCY));
         String amount = cursor.getString(cursor.getColumnIndexOrThrow(DatabaseContract.DatabaseEntry.COLUMN_AMOUNT));
+        String currentBalance = cursor.getString(cursor.getColumnIndexOrThrow(DatabaseContract.DatabaseEntry.COLUMN_CURRENT_BALANCE));
 
         Log.d("Type : ", type);
 
-        if (type.equals("Going")) {
+        double balance = Double.parseDouble(currentBalance);
+
+        if (balance < 0.0) {
             typeIndicator.setBackgroundColor(context.getResources().getColor(R.color.going));
-        } else if (type.equals("Coming")) {
+        } else if (balance > 0.0) {
             typeIndicator.setBackgroundColor(context.getResources().getColor(R.color.coming));
         } else {
             typeIndicator.setBackgroundColor(context.getResources().getColor(R.color.accent));
@@ -89,7 +94,9 @@ public class AddAmountSwipeAdapter extends CursorSwipeAdapter  {
         amountDescription.setText(description);
         amountDate.setText(date);
         itemCurrency.setText(currency);
-        itemAmount.setText(amount);
+        itemAmount.setText(currentBalance);
+        itemAmountSmall.setText(amount);
+        itemCurrencySmall.setText(currency);
         id = Integer.parseInt(_ID);
         Log.d("mPostion Genesis:", " " + id);
 

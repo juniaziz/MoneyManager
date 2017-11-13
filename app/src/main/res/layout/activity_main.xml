@@ -35,7 +35,7 @@
                     android:id="@+id/parentAmount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
+                    android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="@color/light_grey_text"
                     android:text="This money is just for the RPi Project" />

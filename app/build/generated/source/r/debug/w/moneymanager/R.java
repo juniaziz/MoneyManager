@@ -3580,7 +3580,9 @@ containing a value of this type.
         public static final int info=0x7f0d00cc;
         public static final int italic=0x7f0d0050;
         public static final int item_amount=0x7f0d00da;
+        public static final int item_amount_small=0x7f0d00dc;
         public static final int item_currency=0x7f0d00d9;
+        public static final int item_currency_small=0x7f0d00dd;
         public static final int item_touch_helper_previous_elevation=0x7f0d0006;
         public static final int largeLabel=0x7f0d00a5;
         public static final int lay_down=0x7f0d005e;
@@ -3590,9 +3592,9 @@ containing a value of this type.
         public static final int linearLayoutDescription=0x7f0d009b;
         public static final int listMode=0x7f0d0025;
         public static final int list_item=0x7f0d0069;
-        public static final int masked=0x7f0d00e1;
+        public static final int masked=0x7f0d00e3;
         public static final int media_actions=0x7f0d00c5;
-        public static final int message=0x7f0d00df;
+        public static final int message=0x7f0d00e1;
         public static final int middle=0x7f0d0052;
         public static final int mini=0x7f0d004c;
         public static final int multiply=0x7f0d0033;
@@ -3665,11 +3667,11 @@ containing a value of this type.
         public static final int status_bar_latest_event_content=0x7f0d00c4;
         public static final int submenuarrow=0x7f0d007e;
         public static final int submit_area=0x7f0d008f;
-        public static final int swipe=0x7f0d00dc;
+        public static final int swipe=0x7f0d00de;
         public static final int swipe_Edit=0x7f0d00d5;
-        public static final int swipe_Hello=0x7f0d00de;
+        public static final int swipe_Hello=0x7f0d00e0;
         public static final int swipe_delete=0x7f0d00d4;
-        public static final int swipe_surface=0x7f0d00dd;
+        public static final int swipe_surface=0x7f0d00df;
         public static final int swipe_transaction=0x7f0d00d2;
         public static final int tabMode=0x7f0d0027;
         public static final int text=0x7f0d0010;
@@ -3697,7 +3699,7 @@ containing a value of this type.
         public static final int up=0x7f0d001a;
         public static final int useLogo=0x7f0d002d;
         public static final int view_offset_helper=0x7f0d001b;
-        public static final int visible=0x7f0d00e0;
+        public static final int visible=0x7f0d00e2;
         public static final int withText=0x7f0d005d;
         public static final int wrap=0x7f0d001e;
         public static final int wrap_content=0x7f0d003a;

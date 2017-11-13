@@ -633,7 +633,7 @@ public final class R {
 		public static final int listMode = 0x7f0d0025;
 		public static final int list_item = 0x7f0d0069;
 		public static final int media_actions = 0x7f0d00c5;
-		public static final int message = 0x7f0d00df;
+		public static final int message = 0x7f0d00e1;
 		public static final int multiply = 0x7f0d0033;
 		public static final int none = 0x7f0d0024;
 		public static final int normal = 0x7f0d0026;

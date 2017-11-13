@@ -4,28 +4,28 @@
         "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/design/26.0.1/res/layout/design_navigation_item_subheader.xml"
     },
     {
-        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
-        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/layout/abc_screen_simple_overlay_action_mode.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/layout/abc_activity_chooser_view_list_item.xml"
     },
     {
         "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
         "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/26.0.1/res/layout/notification_template_big_media_narrow.xml"
     },
     {
-        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
-        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/layout/abc_activity_chooser_view_list_item.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow_custom.xml",
-        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/26.0.1/res/layout/notification_template_big_media_narrow_custom.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
         "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/layout/abc_screen_content_include.xml"
     },
     {
-        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
-        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.1/res/layout/abc_popup_menu_item_layout.xml"
+        "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow_custom.xml",
+        "source": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/26.0.1/res/layout/notification_template_big_media_narrow_custom.xml"
     },
     {
         "merged": "/Users/junaidaziz/Documents/AndroidyStuff/MoneyManager/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",

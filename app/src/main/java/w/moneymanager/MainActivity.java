@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     private static String parent_ID;
     private static Uri parent_ID_URL;
     private static final int EXISTING_PARENT_AMOUNT = 3;
+    private static final double NEW_BALANCE_INITIALIZER = 10000000000000000.0;
 
     TextView parentAmountTxtView;
     TextView parentCurrencyTxtView;
@@ -195,15 +196,15 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                         Toast.makeText(MainActivity.this, "Amount cannot be empty", Toast.LENGTH_LONG).show();
                     }
                     else {
-                        Double newBalance = 0.0;
+                        Double newBalance = NEW_BALANCE_INITIALIZER;
 
-                        if (radioButton.equalsIgnoreCase("Going")){
-                           newBalance = Double.parseDouble(parentCurrentBalance) - Double.parseDouble(enteredAmount);
-                        } else if (radioButton.equalsIgnoreCase("Coming")){
+                        if (radioButton.equalsIgnoreCase("Going")) {
+                            newBalance = Double.parseDouble(parentCurrentBalance) - Double.parseDouble(enteredAmount);
+                        } else if (radioButton.equalsIgnoreCase("Coming")) {
                             newBalance = Double.parseDouble(parentCurrentBalance) + Double.parseDouble(enteredAmount);
                         }
 
-                        if (newBalance >= 0.0) {
+                        if (newBalance != NEW_BALANCE_INITIALIZER) {
                             ContentValues newBalanceValue = new ContentValues();
                             newBalanceValue.put(DatabaseEntry.COLUMN_CURRENT_BALANCE, Double.toString(newBalance));
 
@@ -233,7 +234,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                             }
                             dialog.dismiss();
                         } else {
-                            Toast.makeText(MainActivity.this, "Update Failed because of Calculation", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "Calculation error", Toast.LENGTH_LONG).show();
                         }
                     }
                 }

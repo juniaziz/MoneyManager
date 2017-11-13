@@ -154,10 +154,6 @@ public class AddAmountActivity extends AppCompatActivity implements LoaderManage
     View.OnClickListener onfabClicked = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-
-
-
-
             final Dialog dialog = new Dialog(AddAmountActivity.this);
             dialog.setContentView(R.layout.dialog_trans);
             dialog.setTitle("Add an Amount");
@@ -175,21 +171,17 @@ public class AddAmountActivity extends AppCompatActivity implements LoaderManage
             currencyEditText.setText("AED");
             descriptionEditText.setText("Ting Tong");
 
-
             long date = System.currentTimeMillis();
             SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
             String dateString = sdf.format(date);
             selectedDateTextView.setText(dateString);
 
-
             selectedDateTextView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
 
-
                     DialogFragment newFragment = new DatePickerFragment(selectedDateTextView);
                     newFragment.show(getSupportFragmentManager(), "datePicker");
-
                 }
 
             });

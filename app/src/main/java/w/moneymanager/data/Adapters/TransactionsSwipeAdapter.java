@@ -5,7 +5,6 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.DatabaseUtils;
-import android.graphics.Color;
 import android.net.Uri;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -30,6 +29,7 @@ public class TransactionsSwipeAdapter extends CursorSwipeAdapter {
     Context gContext;
     long parent_ID;
     String id;
+    private static final double DOUBLE_INITIALIZER = 10000000000000000.0;
 
     public TransactionsSwipeAdapter(Context context, Cursor c){
         super(context, c, 0);
@@ -49,7 +49,7 @@ public class TransactionsSwipeAdapter extends CursorSwipeAdapter {
     }
 
     @Override
-    public void bindView(View view, Context context, final Cursor cursor) {
+    public void bindView(View view, final Context context, final Cursor cursor) {
 
         TextView amountDescription = view.findViewById(R.id.amount_description);
         TextView amountDate = view.findViewById(R.id.amount_date);
@@ -80,18 +80,16 @@ public class TransactionsSwipeAdapter extends CursorSwipeAdapter {
         itemCurrency.setText(currency);
         itemAmount.setText(amount);
 
-
         deleteBtn.setTag(ID);
-
 
         deleteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String amountStr = "";
-                double amount = 0.0;
+                double amount = DOUBLE_INITIALIZER;
                 String currentBalanceStr = "";
-                double currentBalance = 0.0;
-                double newBalance = 0.0;
+                double currentBalance = DOUBLE_INITIALIZER;
+                double newBalance = DOUBLE_INITIALIZER;
                 String type = "";
 
                 String id = (String) view.getTag();
@@ -130,10 +128,12 @@ public class TransactionsSwipeAdapter extends CursorSwipeAdapter {
                 if (cursorAmount.moveToFirst()) {
                     currentBalanceStr = cursorAmount.getString(cursorAmount.getColumnIndexOrThrow(DatabaseContract.DatabaseEntry.COLUMN_CURRENT_BALANCE));
                     currentBalance = Double.parseDouble(currentBalanceStr);
+                    Log.d("currentBalance", " " + currentBalance);
                 }
 
-                if (currentBalance == 0.0 || amount == 0.0){
+                if (currentBalance == DOUBLE_INITIALIZER || amount == DOUBLE_INITIALIZER){
                     Log.d("DELETE null err:", " " + currentBalance + " " + amount);
+                    Toast.makeText(gContext, "Either Current Balance: " + currentBalance + " or amount: " + amount + " is zero", Toast.LENGTH_LONG).show();
                 } else {
 
                     if (type.equalsIgnoreCase("Going")){
@@ -144,7 +144,7 @@ public class TransactionsSwipeAdapter extends CursorSwipeAdapter {
 
                 }
 
-                if (newBalance >= 0.0) {
+                if (newBalance != DOUBLE_INITIALIZER) {
                     ContentValues valuesParent = new ContentValues();
                     valuesParent.put(DatabaseContract.DatabaseEntry.COLUMN_CURRENT_BALANCE, newBalance);
 
@@ -159,11 +159,8 @@ public class TransactionsSwipeAdapter extends CursorSwipeAdapter {
                         Toast.makeText(gContext, deletedTransactions + " " + "Transactions Deleted", Toast.LENGTH_LONG).show();
                     }
                 }
-
-
             }
         });
-
     }
 
     @Override
