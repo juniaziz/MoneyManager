@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.ContentUris;
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.CursorIndexOutOfBoundsException;
 import android.database.DatabaseUtils;
@@ -33,7 +34,7 @@ import static android.os.Build.ID;
 public class AddAmountSwipeAdapter extends CursorSwipeAdapter  {
 
     Context gContext;
-
+    SharedPreferences preferences;
 
     int mPosition;
     String _ID;
@@ -81,11 +82,13 @@ public class AddAmountSwipeAdapter extends CursorSwipeAdapter  {
 
         Log.d("Type : ", type);
 
-        double balance = Double.parseDouble(currentBalance);
+        double doubleBalance = Double.parseDouble(currentBalance);
 
-        if (balance < 0.0) {
+        int balance = (int) doubleBalance;
+
+        if (balance < 0) {
             typeIndicator.setBackgroundColor(context.getResources().getColor(R.color.going));
-        } else if (balance > 0.0) {
+        } else if (balance > 0) {
             typeIndicator.setBackgroundColor(context.getResources().getColor(R.color.coming));
         } else {
             typeIndicator.setBackgroundColor(context.getResources().getColor(R.color.accent));
@@ -94,7 +97,7 @@ public class AddAmountSwipeAdapter extends CursorSwipeAdapter  {
         amountDescription.setText(description);
         amountDate.setText(date);
         itemCurrency.setText(currency);
-        itemAmount.setText(currentBalance);
+        itemAmount.setText(Integer.toString(balance));
         itemAmountSmall.setText(amount);
         itemCurrencySmall.setText(currency);
         id = Integer.parseInt(_ID);
@@ -192,6 +195,9 @@ public class AddAmountSwipeAdapter extends CursorSwipeAdapter  {
                             String description = descriptionEditText.getText().toString().trim();
                             String selectedDate = selectedDateTextView.getText().toString().trim();
                             String radioButton = radioButtonID.getText().toString();
+
+                            preferences = gContext.getSharedPreferences("w.moneymanager", Context.MODE_PRIVATE);
+                            preferences.edit().putString("currency", currency).apply();
 
                             ContentValues values = new ContentValues();
                             values.put(DatabaseContract.DatabaseEntry.COLUMN_AMOUNT, amount);

@@ -8,8 +8,11 @@
         android:minSdkVersion="19"
         android:targetSdkVersion="26" />
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
+        android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -24,8 +27,7 @@
         </activity>
         <activity
             android:name="w.moneymanager.MainActivity"
-            android:label="@string/transactions" >
-        </activity>
+            android:label="@string/transactions" />
 
         <provider
             android:name="w.moneymanager.data.data.DatabaseContentProvider"

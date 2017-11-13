@@ -14,8 +14,8 @@ public class DatabaseDbHelper extends SQLiteOpenHelper {
 
 
 
-    public static final int DATABASE_VERSION = 3;
-    public static final String DATABASE_NAME = "Financial Records";
+    public static final int DATABASE_VERSION = 1;
+    public static final String DATABASE_NAME = "FinancialRecords.db";
 
 
 

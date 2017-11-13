@@ -8,6 +8,7 @@
     tools:context="w.moneymanager.AddAmountActivity">
 
 
+
     <RelativeLayout android:id="@+id/empty_view_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -51,6 +52,8 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:divider="@color/accent_dark"
+        android:dividerHeight="1dp"
         android:id="@+id/add_amount_listview">
 
 
@@ -63,8 +66,7 @@
         android:layout_margin="25dp"
         android:clickable="true"
         android:src="@drawable/ic_add_black_24dp"
-        app:layout_anchor="@id/add_amount_listview"
-        app:layout_anchorGravity="bottom|right|end"/>
+        android:layout_gravity="bottom|right"/>
 
 
 </android.support.design.widget.CoordinatorLayout>

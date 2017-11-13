@@ -19,7 +19,7 @@ import com.daimajia.swipe.adapters.CursorSwipeAdapter;
 import w.moneymanager.R;
 import w.moneymanager.data.data.DatabaseContract;
 
-/**
+/*
  * Created by junaidaziz on 11/12/17.
  */
 

@@ -13,7 +13,7 @@
         android:label="Tests for com.example.android.moneymanager"
         android:targetPackage="com.example.android.moneymanager" />
 
-    <application>
+    <application android:debuggable="true" >
         <uses-library android:name="android.test.runner" />
     </application>
 

@@ -14,6 +14,6 @@
     <color name="going">#e74c3c</color>
     <color name="coming">#27ae60</color>
 
-    <color name="delete">#c62828</color>
-    <color name="edit">#43A047</color>
+    <color name="delete">#f44336</color>
+    <color name="edit">#00c853</color>
 </resources>

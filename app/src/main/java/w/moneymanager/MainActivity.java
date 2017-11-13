@@ -24,8 +24,9 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 import java.text.SimpleDateFormat;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import w.moneymanager.data.data.DatabaseContract.DatabaseEntry;
-
 
 public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor>{
 
@@ -44,8 +45,6 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     TextView parentCurrencyTxtView;
     TextView parentDateTxtView;
     TextView parentCurrentBalanceTxtView;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -117,10 +116,13 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             parentDate = (cursor.getString(cursor.getColumnIndexOrThrow(DatabaseEntry.COLUMN_DATE)));
             parentCurrentBalance = (cursor.getString(cursor.getColumnIndexOrThrow(DatabaseEntry.COLUMN_CURRENT_BALANCE)));
 
+            double currentBalance = Double.parseDouble(parentCurrentBalance);
+            currentBalance = round(currentBalance, 2);
+
             parentAmountTxtView.setText(parentAmount);
             parentCurrencyTxtView.setText(parentCurrency);
             parentDateTxtView.setText(parentDate);
-            parentCurrentBalanceTxtView.setText(parentCurrentBalance);
+            parentCurrentBalanceTxtView.setText(Double.toString(currentBalance));
         }
     }
 
@@ -150,8 +152,6 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
             currencyEditText.setEnabled(false);
             currencyEditText.setText(parentCurrency);
-            descriptionEditText.setText("Ting ");
-
 
             long date = System.currentTimeMillis();
             SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
@@ -190,9 +190,9 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                         Toast.makeText(MainActivity.this, "Description cannot be empty", Toast.LENGTH_LONG).show();
                     }
                     else if (currency.isEmpty()) {
-                        Toast.makeText(MainActivity.this, "currency cannot be empty", Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this, "Currency cannot be empty", Toast.LENGTH_LONG).show();
                     }
-                    else if (enteredAmount.isEmpty() || description.isEmpty() || currency.isEmpty()) {
+                    else if (enteredAmount.isEmpty()) {
                         Toast.makeText(MainActivity.this, "Amount cannot be empty", Toast.LENGTH_LONG).show();
                     }
                     else {
@@ -252,6 +252,14 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 //            fragmentTransaction.addToBackStack(fragment.getClass().getName());
 //        }
         fragmentTransaction.commit();
+    }
+
+    public static double round(double value, int places) {
+        if (places < 0) throw new IllegalArgumentException();
+
+        BigDecimal bd = new BigDecimal(value);
+        bd = bd.setScale(places, RoundingMode.HALF_UP);
+        return bd.doubleValue();
     }
 
     public void resetToHomeScreen(){
